@@ -2031,7 +2031,7 @@ class Vector3TypeTest(unittest.TestCase):
         steps = 10
         angle_step = self.e1.angle_to(self.e2) / steps
         for i, u in (
-            (i, self.e1.slerp(self.e2, i / float(steps))) for i in range(steps + 1)
+                (i, self.e1.slerp(self.e2, i / float(steps))) for i in range(steps + 1)
         ):
             self.assertAlmostEqual(u.length(), 1)
             self.assertAlmostEqual(self.e1.angle_to(u), i * angle_step)

@@ -14,7 +14,6 @@ This demo will show you a few things:
 
 """
 
-
 import os
 
 import pygame as pg

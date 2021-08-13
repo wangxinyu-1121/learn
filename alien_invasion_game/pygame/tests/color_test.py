@@ -7,7 +7,6 @@ import pygame
 from pygame.compat import long_
 from pygame.colordict import THECOLORS
 
-
 IS_PYPY = "PyPy" == platform.python_implementation()
 ################################### CONSTANTS ##################################
 
@@ -20,6 +19,7 @@ rgba_combinations = [
     for b in rgba_vals
     for a in rgba_vals
 ]
+
 
 ################################################################################
 
@@ -971,8 +971,8 @@ class ColorTypeTest(unittest.TestCase):
             self.assertTrue(corrected.b == lib_corrected.b)
             self.assertTrue(corrected.a == lib_corrected.a)
 
-        # TODO: test against statically defined verified _correct_ values
-        # assert corrected.r == 125 etc.
+            # TODO: test against statically defined verified _correct_ values
+            # assert corrected.r == 125 etc.
 
     def test_pickle(self):
         import pickle
@@ -1161,7 +1161,7 @@ class ColorTypeTest(unittest.TestCase):
         for r, g, b in test_colors:
             for a in range(255):
                 with self.subTest(r=r, g=g, b=b, a=a):
-                    alpha = a/255.0
+                    alpha = a / 255.0
                     self.assertEqual(Color(r, g, b, a).premul_alpha(),
                                      Color(((r + 1) * a) >> 8,
                                            ((g + 1) * a) >> 8,
@@ -1212,6 +1212,7 @@ class ColorTypeTest(unittest.TestCase):
         c.set_length(3)
         c.update(1, 2, 3, 4)
         self.assertEqual(len(c), 4)
+
 
 class SubclassTest(unittest.TestCase):
     class MyColor(pygame.Color):

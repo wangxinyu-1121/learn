@@ -39,7 +39,7 @@ else:
                 else int_value + 1)
 
 
-#   H E L P E R   F U N C T I O N S    #
+# H E L P E R   F U N C T I O N S    #
 
 # fractional part of x
 
@@ -97,7 +97,7 @@ def _drawvertline(surf, color, in_x, y_from, y_to):
         surf.set_at((in_x, line_y), color)
 
 
-#    I N T E R N A L   D R A W   L I N E   F U N C T I O N S    #
+# I N T E R N A L   D R A W   L I N E   F U N C T I O N S    #
 
 def _clip_and_draw_horizline(surf, color, x_from, in_y, x_to):
     """draw clipped horizontal line."""
@@ -374,7 +374,7 @@ def _draw_aaline_dx(d_x, slope, end, start, draw_two_pixel):
         draw_two_pixel(line_x, line_y, 1)
 
 
-#   C L I P   A N D   D R A W   L I N E   F U N C T I O N S    #
+# C L I P   A N D   D R A W   L I N E   F U N C T I O N S    #
 
 def _clip_and_draw_line(surf, rect, color, pts):
     """clip the line into the rectangle and draw if needed.
@@ -513,7 +513,7 @@ def _multi_lines(surf, color, closed,  # pylint: disable=too-many-arguments
         else:
             _clip_and_draw_line_width(surf, rect, color, line, width)
 
-    # TODO Rect(...)
+            # TODO Rect(...)
 
 
 def draw_lines(surf, color, closed, points, width=1):

@@ -4,7 +4,6 @@ import pygame
 from pygame._sdl2 import touch
 from pygame.tests.test_utils import question
 
-
 has_touchdevice = touch.get_num_devices() > 0
 
 
@@ -38,7 +37,6 @@ class TouchTest(unittest.TestCase):
 
 
 class TouchInteractiveTest(unittest.TestCase):
-
     __tags__ = ["interactive"]
 
     @unittest.skipIf(not has_touchdevice, "no touch devices found")

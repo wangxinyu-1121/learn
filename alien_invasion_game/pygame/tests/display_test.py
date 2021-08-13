@@ -11,7 +11,6 @@ from pygame.tests.test_utils import question
 
 from pygame import display
 
-
 SDL2 = pygame.get_sdl_version()[0] >= 2
 
 
@@ -54,19 +53,19 @@ class DisplayModuleTest(unittest.TestCase):
     def test_flip(self):
         screen = pygame.display.set_mode((100, 100))
 
-        #test without a change
+        # test without a change
         self.assertIsNone(pygame.display.flip())
 
-        #test with a change
-        pygame.Surface.fill(screen, (66,66,53))
+        # test with a change
+        pygame.Surface.fill(screen, (66, 66, 53))
         self.assertIsNone(pygame.display.flip())
 
-        #test without display init
+        # test without display init
         pygame.display.quit()
         with self.assertRaises(pygame.error):
             (pygame.display.flip())
 
-        #test without window
+        # test without window
         del screen
         with self.assertRaises(pygame.error):
             (pygame.display.flip())
@@ -74,21 +73,20 @@ class DisplayModuleTest(unittest.TestCase):
     def test_get_active(self):
         """Test the get_active function"""
 
-        #Initially, the display is not active
+        # Initially, the display is not active
         pygame.display.quit()
         self.assertEqual(pygame.display.get_active(), False)
 
-        #get_active defaults to true after a set_mode
+        # get_active defaults to true after a set_mode
         pygame.display.init()
         pygame.display.set_mode((640, 480))
         self.assertEqual(pygame.display.get_active(), True)
 
-        #get_active after init/quit should be False
-        #since no display is visible
+        # get_active after init/quit should be False
+        # since no display is visible
         pygame.display.quit()
         pygame.display.init()
         self.assertEqual(pygame.display.get_active(), False)
-
 
     @unittest.skipIf(
         os.environ.get("SDL_VIDEODRIVER") == "dummy",
@@ -97,9 +95,8 @@ class DisplayModuleTest(unittest.TestCase):
     def test_get_active_iconify(self):
         """Test the get_active function after an iconify"""
 
-
-        #According to the docs, get_active should return
-        #false if the display is iconified
+        # According to the docs, get_active should return
+        # false if the display is iconified
         pygame.display.set_mode((640, 480))
 
         pygame.event.clear()
@@ -205,28 +202,28 @@ class DisplayModuleTest(unittest.TestCase):
     def test_get_wm_info(self):
         wm_info = display.get_wm_info()
         # Assert function returns a dictionary type
-        self.assertIsInstance(wm_info,dict)
+        self.assertIsInstance(wm_info, dict)
 
         wm_info_potential_keys = {
-        'colorbuffer',
-        'connection',
-        'data',
-        'dfb',
-        'display',
-        'framebuffer',
-        'fswindow',
-        'hdc',
-        'hglrc',
-        'hinstance',
-        'lock_func',
-        'resolveFramebuffer',
-        'shell_surface',
-        'surface',
-        'taskHandle',
-        'unlock_func',
-        'wimpVersion',
-        'window',
-        'wmwindow'
+            'colorbuffer',
+            'connection',
+            'data',
+            'dfb',
+            'display',
+            'framebuffer',
+            'fswindow',
+            'hdc',
+            'hglrc',
+            'hinstance',
+            'lock_func',
+            'resolveFramebuffer',
+            'shell_surface',
+            'surface',
+            'taskHandle',
+            'unlock_func',
+            'wimpVersion',
+            'window',
+            'wmwindow'
         }
 
         # If any unexpected dict keys are present, they
@@ -239,8 +236,8 @@ class DisplayModuleTest(unittest.TestCase):
 
     @unittest.skipIf(
         (
-            "skipping for all because some failures on rasppi and maybe other platforms"
-            or os.environ.get("SDL_VIDEODRIVER") == "dummy"
+                "skipping for all because some failures on rasppi and maybe other platforms"
+                or os.environ.get("SDL_VIDEODRIVER") == "dummy"
         ),
         'OpenGL requires a non-"dummy" SDL_VIDEODRIVER',
     )
@@ -494,21 +491,21 @@ class DisplayModuleTest(unittest.TestCase):
         self.assertFalse(display.get_init())
 
     @unittest.skipIf(
-    os.environ.get("SDL_VIDEODRIVER") == "dummy" and not SDL2,
-    "Can't set gamma on SDL 1 with the dummy video driver",
+        os.environ.get("SDL_VIDEODRIVER") == "dummy" and not SDL2,
+        "Can't set gamma on SDL 1 with the dummy video driver",
     )
     def test_set_gamma(self):
-        if(not SDL2):
+        if (not SDL2):
             pygame.display.set_mode((1, 1))
-        gammas = [0.0,0.25,0.5,0.88,1.0]
+        gammas = [0.0, 0.25, 0.5, 0.88, 1.0]
         for gamma in gammas:
-            self.assertEqual(pygame.display.set_gamma(gamma),True)
-        gammas = [(0.5,0.5,0.5),(1.0,1.0,1.0),(0.22,0.33,0.44),(0.0,0.0,0.0)]
+            self.assertEqual(pygame.display.set_gamma(gamma), True)
+        gammas = [(0.5, 0.5, 0.5), (1.0, 1.0, 1.0), (0.22, 0.33, 0.44), (0.0, 0.0, 0.0)]
         for gammaTuple in gammas:
-            self.assertEqual(pygame.display.set_gamma(gammaTuple[0],gammaTuple[1],gammaTuple[2]),True)
+            self.assertEqual(pygame.display.set_gamma(gammaTuple[0], gammaTuple[1], gammaTuple[2]), True)
 
     @unittest.skipIf(
-        not hasattr(pygame.display,"set_gamma_ramp"),
+        not hasattr(pygame.display, "set_gamma_ramp"),
         "Not all systems and hardware support gamma ramps"
     )
     def test_set_gamma_ramp(self):
@@ -589,13 +586,14 @@ class DisplayModuleTest(unittest.TestCase):
             palette = "qwerty"
             pygame.display.set_palette(palette)
         with self.assertRaises(TypeError):
-            palette = [[123, 123, 123]*10000]
+            palette = [[123, 123, 123] * 10000]
             pygame.display.set_palette(palette)
         with self.assertRaises(TypeError):
             palette = [1, 2, 3]
             pygame.display.set_palette(palette)
 
     skip_list = ["dummy", "android"]
+
     @unittest.skipIf(
         os.environ.get("SDL_VIDEODRIVER") in skip_list,
         'requires the SDL_VIDEODRIVER to be non dummy'
@@ -603,17 +601,17 @@ class DisplayModuleTest(unittest.TestCase):
     def test_toggle_fullscreen(self):
         """Test for toggle fullscreen"""
 
-        #try to toggle fullscreen with no active display
-        #this should result in an error
+        # try to toggle fullscreen with no active display
+        # this should result in an error
         pygame.display.quit()
         with self.assertRaises(pygame.error):
             pygame.display.toggle_fullscreen()
 
         pygame.display.init()
-        width_height = (640,480)
+        width_height = (640, 480)
         test_surf = pygame.display.set_mode(width_height)
 
-        #try to toggle fullscreen
+        # try to toggle fullscreen
         try:
             pygame.display.toggle_fullscreen()
 
@@ -621,22 +619,21 @@ class DisplayModuleTest(unittest.TestCase):
             self.fail()
 
         else:
-            #if toggle success, the width/height should be a
-            #value found in list_modes
+            # if toggle success, the width/height should be a
+            # value found in list_modes
             if pygame.display.toggle_fullscreen() == 1:
                 boolean = (test_surf.get_width(), test_surf.get_height()) \
-                in pygame.display.list_modes(depth=0, flags=pygame.FULLSCREEN, display=0)
+                          in pygame.display.list_modes(depth=0, flags=pygame.FULLSCREEN, display=0)
 
                 self.assertEqual(boolean, True)
 
-            #if not original width/height should be preserved
+            # if not original width/height should be preserved
             else:
                 self.assertEqual((test_surf.get_width(), test_surf.get_height()), \
-                width_height)
+                                 width_height)
 
 
 class DisplayInteractiveTest(unittest.TestCase):
-
     __tags__ = ["interactive"]
 
     def test_set_icon_interactive(self):
@@ -668,9 +665,9 @@ class DisplayInteractiveTest(unittest.TestCase):
         screen = pygame.display.set_mode((400, 100))
         screen.fill((100, 100, 100))
 
-        blue_ramp = [x*256 for x in range(0, 256)]
-        blue_ramp[100] = 150*256  # Can't tint too far or gamma ramps fail
-        normal_ramp = [x*256 for x in range(0, 256)]
+        blue_ramp = [x * 256 for x in range(0, 256)]
+        blue_ramp[100] = 150 * 256  # Can't tint too far or gamma ramps fail
+        normal_ramp = [x * 256 for x in range(0, 256)]
         # test to see if this platform supports gamma ramps
         gamma_success = False
         if pygame.display.set_gamma_ramp(normal_ramp, normal_ramp, blue_ramp):

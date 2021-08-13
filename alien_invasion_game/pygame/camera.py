@@ -1,6 +1,4 @@
-
 _is_init = 0
-
 
 
 def init():
@@ -85,7 +83,6 @@ def list_cameras():
 
 
 class Camera:
-
     def __init__(self, device=0, size=(320, 200), mode="RGB"):
         """
         """
@@ -123,10 +120,9 @@ class Camera:
 
 
 if __name__ == "__main__":
-
     # try and use this camera stuff with the pygame camera example.
     import pygame.examples.camera
 
-    #pygame.camera.Camera = Camera
-    #pygame.camera.list_cameras = list_cameras
+    # pygame.camera.Camera = Camera
+    # pygame.camera.list_cameras = list_cameras
     pygame.examples.camera.main()

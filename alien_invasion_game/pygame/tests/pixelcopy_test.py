@@ -20,7 +20,6 @@ def unsigned32(i):
 
 @unittest.skipIf(IS_PYPY, "pypy2 having illegal instruction on mac")
 class PixelcopyModuleTest(unittest.TestCase):
-
     bitsizes = [8, 16, 32]
 
     test_palette = [
@@ -598,7 +597,6 @@ class PixelCopyTestWithArray(unittest.TestCase):
 @unittest.skipIf(not pygame.HAVE_NEWBUF, "newbuf not implemented")
 @unittest.skipIf(IS_PYPY, "pypy2 having illegal instruction on mac")
 class PixelCopyTestWithArray(unittest.TestCase):
-
     if pygame.HAVE_NEWBUF:
         from pygame.tests.test_utils import buftools
 

@@ -41,12 +41,12 @@ def show_image(s, images=[]):
 
 
 def threshold(
-    return_surf,
-    surf,
-    color,
-    threshold=(0, 0, 0),
-    diff_color=(0, 0, 0),
-    change_return=True,
+        return_surf,
+        surf,
+        color,
+        threshold=(0, 0, 0),
+        diff_color=(0, 0, 0),
+        change_return=True,
 ):
     """ given the color it makes return_surf only have areas with the given colour.
     """
@@ -76,8 +76,8 @@ def threshold(
                 if change_return:
                     return_surf.set_at((x, y), c1)
                 similar += 1
-            # else:
-            #    print c1, c2
+                # else:
+                #    print c1, c2
 
     return similar
 
@@ -532,7 +532,7 @@ class TransformModuleTest(unittest.TestCase):
 
             self.assertEqual(w * h, pixels_within_threshold)
 
-        ################################################################
+            ################################################################
 
     def test_threshold_set_behavior2(self):
         """ raises an error when set_behavior=2 and set_color is not None.
@@ -957,10 +957,10 @@ class TransformModuleTest(unittest.TestCase):
             )
 
     def test_rotate(self):
-        #setting colors and canvas
+        # setting colors and canvas
         blue = (0, 0, 255, 255)
         red = (255, 0, 0, 255)
-        black = (0,0,0)
+        black = (0, 0, 0)
         canvas = pygame.Surface((3, 3))
         rotation = 0
 
@@ -971,7 +971,7 @@ class TransformModuleTest(unittest.TestCase):
         self.assertEqual(canvas.get_at((2, 0)), blue)
         self.assertEqual(canvas.get_at((0, 2)), red)
 
-        for i in range(0,4):
+        for i in range(0, 4):
             if i % 2 == 0:
                 self.assertEqual(canvas.get_at((0, 0)), black)
             elif i == 1:
@@ -979,7 +979,7 @@ class TransformModuleTest(unittest.TestCase):
             elif i == 3:
                 self.assertEqual(canvas.get_at((0, 0)), red)
 
-            rotation+=90
+            rotation += 90
             canvas = pygame.transform.rotate(canvas, 90)
 
         self.assertEqual(canvas.get_at((0, 0)), black)
@@ -1045,16 +1045,19 @@ class TransformModuleTest(unittest.TestCase):
         # All machines should allow returning to original value.
         # Also check that keyword argument works.
         pygame.transform.set_smoothscale_backend(type=original_type)
+
         # Something invalid.
         def change():
             pygame.transform.set_smoothscale_backend("mmx")
 
         self.assertRaises(ValueError, change)
+
         # Invalid argument keyword.
         def change():
             pygame.transform.set_smoothscale_backend(t="GENERIC")
 
         self.assertRaises(TypeError, change)
+
         # Invalid argument type.
         def change():
             pygame.transform.set_smoothscale_backend(1)
@@ -1062,7 +1065,6 @@ class TransformModuleTest(unittest.TestCase):
         self.assertRaises(TypeError, change)
         # Unsupported type, if possible.
         if original_type != "SSE":
-
             def change():
                 pygame.transform.set_smoothscale_backend("SSE")
 
@@ -1153,12 +1155,13 @@ class TransformModuleTest(unittest.TestCase):
 
         s = pygame.Surface((10, 0))
         pygame.transform.scale(s, (10, 2))
-        s1=pygame.transform.rotozoom(s, 30, 1)
+        s1 = pygame.transform.rotozoom(s, 30, 1)
 
-        self.assertEqual(s1.get_rect(), pygame.Rect(0,0,0,0))
+        self.assertEqual(s1.get_rect(), pygame.Rect(0, 0, 0, 0))
 
     def test_smoothscale(self):
         """Tests the stated boundaries, sizing, and color blending of smoothscale function"""
+
         # __doc__ (as of 2008-08-02) for pygame.transform.smoothscale:
 
         # pygame.transform.smoothscale(Surface, (width, height), DestSurface =
@@ -1177,38 +1180,42 @@ class TransformModuleTest(unittest.TestCase):
         #
         # New in pygame 1.8
 
-        #check stated exceptions
+        # check stated exceptions
         def smoothscale_low_bpp():
             starting_surface = pygame.Surface((20, 20), depth=12)
             smoothscaled_surface = pygame.transform.smoothscale(starting_surface, (10, 10))
+
         self.assertRaises(ValueError, smoothscale_low_bpp)
 
         def smoothscale_high_bpp():
             starting_surface = pygame.Surface((20, 20), depth=48)
             smoothscaled_surface = pygame.transform.smoothscale(starting_surface, (10, 10))
+
         self.assertRaises(ValueError, smoothscale_high_bpp)
 
         def smoothscale_invalid_scale():
             starting_surface = pygame.Surface((20, 20), depth=32)
             smoothscaled_surface = pygame.transform.smoothscale(starting_surface, (-1, -1))
+
         self.assertRaises(ValueError, smoothscale_invalid_scale)
 
         # Test Color Blending Scaling-Up
         two_pixel_surface = pygame.Surface((2, 1), depth=32)
         two_pixel_surface.fill(pygame.Color(0, 0, 0), pygame.Rect(0, 0, 1, 1))
         two_pixel_surface.fill(pygame.Color(255, 255, 255), pygame.Rect(1, 0, 1, 1))
-        for k in [2**x for x in range(5,8)]: # Enlarge to targets 32, 64...256
+        for k in [2 ** x for x in range(5, 8)]:  # Enlarge to targets 32, 64...256
             bigger_surface = pygame.transform.smoothscale(two_pixel_surface, (k, 1))
-            self.assertEqual(bigger_surface.get_at((k//2, 0)), pygame.Color(127, 127, 127))
+            self.assertEqual(bigger_surface.get_at((k // 2, 0)), pygame.Color(127, 127, 127))
             self.assertEqual(bigger_surface.get_size(), (k, 1))
         # Test Color Blending Scaling-Down
         two_five_six_surf = pygame.Surface((256, 1), depth=32)
         two_five_six_surf.fill(pygame.Color(0, 0, 0), pygame.Rect(0, 0, 128, 1))
         two_five_six_surf.fill(pygame.Color(255, 255, 255), pygame.Rect(128, 0, 128, 1))
-        for k in range(3, 11, 2): #Shrink to targets 3, 5...11 pixels wide
+        for k in range(3, 11, 2):  # Shrink to targets 3, 5...11 pixels wide
             smaller_surface = pygame.transform.smoothscale(two_five_six_surf, (k, 1))
-            self.assertEqual(smaller_surface.get_at(((k//2), 0)), pygame.Color(127, 127, 127))
+            self.assertEqual(smaller_surface.get_at(((k // 2), 0)), pygame.Color(127, 127, 127))
             self.assertEqual(smaller_surface.get_size(), (k, 1))
+
 
 class TransformDisplayModuleTest(unittest.TestCase):
     def setUp(self):

@@ -26,7 +26,6 @@ The window will have no border decorations.
 The code also demonstrates use of the timer events.
 """
 
-
 import os
 import pygame as pg
 

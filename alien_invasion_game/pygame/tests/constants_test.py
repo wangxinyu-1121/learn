@@ -1,9 +1,7 @@
 import unittest
 import pygame.constants
 
-
 SDL2 = pygame.get_sdl_version()[0] >= 2
-
 
 # K_* and KSCAN_* common names.
 K_AND_KSCAN_COMMON_NAMES = (
@@ -119,7 +117,6 @@ if SDL2:
         "CURRENCYUNIT",
         "CURRENCYSUBUNIT",
     )
-
 
 # Constants that have the same value.
 K_AND_KSCAN_COMMON_OVERLAPS = ()

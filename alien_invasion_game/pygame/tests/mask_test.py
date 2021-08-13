@@ -10,7 +10,6 @@ from pygame.locals import *
 from pygame.math import Vector2
 from pygame.tests.test_utils import AssertRaisesRegexMixin
 
-
 IS_PYPY = "PyPy" == platform.python_implementation()
 
 
@@ -1909,7 +1908,7 @@ class MaskTypeTest(AssertRaisesRegexMixin, unittest.TestCase):
         mask_corners = corners(mask)
 
         for i, corner1 in enumerate(mask_corners):
-            for corner2 in mask_corners[i + 1 :]:
+            for corner2 in mask_corners[i + 1:]:
                 mask.clear()  # Clear for each pair of corners.
                 mask.set_at(corner1)
                 mask.set_at(corner2)
@@ -4464,9 +4463,9 @@ class MaskTypeTest(AssertRaisesRegexMixin, unittest.TestCase):
         unfilled_rect.center = mask_rect.center
 
         for pos in (
-            (x, y)
-            for x in range(unfilled_rect.x, unfilled_rect.w)
-            for y in range(unfilled_rect.y, unfilled_rect.h)
+                (x, y)
+                for x in range(unfilled_rect.x, unfilled_rect.w)
+                for y in range(unfilled_rect.y, unfilled_rect.h)
         ):
             mask.set_at(pos, 0)
 
@@ -4479,7 +4478,7 @@ class MaskTypeTest(AssertRaisesRegexMixin, unittest.TestCase):
         to_surface.lock()  # Lock for possible speed up.
 
         for pos in (
-            (x, y) for x in range(surface_rect.w) for y in range(surface_rect.h)
+                (x, y) for x in range(surface_rect.w) for y in range(surface_rect.h)
         ):
             if not mask_rect.collidepoint(pos):
                 expected_color = surface_color

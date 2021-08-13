@@ -21,6 +21,7 @@ __all__ = ['getResource']
 import sys
 import os
 from pygame.compat import get_BytesIO
+
 BytesIO = get_BytesIO()
 
 try:
@@ -33,6 +34,7 @@ except ImportError:
         :return: Always returns False
         """
         return False
+
 
     def resource_stream(_package_of_requirement, _resource_name):
         """
@@ -59,7 +61,7 @@ def getResource(identifier, pkgname=__name__):
     rather than use it as a file-like object.  For example, you may
     be handing data off to a C API.
     """
-    
+
     # When pyinstaller (or similar tools) are used, resource_exists may raise NotImplemented error
     try:
         if resource_exists(pkgname, identifier):

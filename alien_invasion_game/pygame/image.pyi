@@ -5,6 +5,7 @@ from pygame.bufferproxy import BufferProxy
 
 if sys.version_info >= (3, 6):
     from os import PathLike
+
     AnyPath = Union[str, bytes, PathLike[str], PathLike[bytes]]
 else:
     AnyPath = Union[Text, bytes]
@@ -14,19 +15,32 @@ _to_string_format = Literal['p', 'RGB', 'RGBX', 'RGBA', 'ARGB', 'RGBA_PREMULT', 
 _from_buffer_format = Literal['p', 'RGB', 'BGR', 'RGBX', 'RGBA', 'ARGB']
 _from_string_format = Literal['p', 'RGB', 'RGBX', 'RGBA', 'ARGB']
 
+
 def load(filename: Union[AnyPath, IO], namehint: Optional[str] = "") -> Surface: ...
+
+
 def save(surface: Surface, filename: Union[AnyPath, IO],
-        namehint: Optional[str] = "") -> None: ...
+         namehint: Optional[str] = "") -> None: ...
+
+
 def get_sdl_image_version() -> Union[None, Tuple[int, int, int]]: ...
+
+
 def get_extended() -> bool: ...
+
+
 def tostring(surface: Surface, format: _to_string_format,
              flipped: Optional[bool] = False) -> str: ...
+
+
 def fromstring(
-    string: str,
-    size: Union[List[int], Tuple[int, int]],
-    format: _from_string_format,
-    flipped: Optional[bool] = False,
+        string: str,
+        size: Union[List[int], Tuple[int, int]],
+        format: _from_string_format,
+        flipped: Optional[bool] = False,
 ) -> Surface: ...
+
+
 def frombuffer(
-    bytes: _BufferStyle, size: Union[List[int], Tuple[int, int]], format: _from_buffer_format
+        bytes: _BufferStyle, size: Union[List[int], Tuple[int, int]], format: _from_buffer_format
 ) -> Surface: ...

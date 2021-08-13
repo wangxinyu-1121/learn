@@ -6,6 +6,7 @@ from pygame import sdlmain_osx
 
 __all__ = ['Video_AutoInit']
 
+
 def Video_AutoInit():
     """Called from the base.c just before display module is initialized."""
     if 'Darwin' in platform.platform():

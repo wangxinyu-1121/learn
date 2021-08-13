@@ -186,7 +186,7 @@ class FontModuleTest(unittest.TestCase):
         image = font.render("Test", 0, (255, 255, 255), (0, 0, 0))
         self.assertIsNone(image.get_colorkey())
         image.set_alpha(255)
-        surf.blit(image, (0,0))
+        surf.blit(image, (0, 0))
 
     def test_issue_font_alphablit(self):
         """ Check that blitting anti-aliased text doesn't
@@ -549,7 +549,6 @@ class FontTypeTest(unittest.TestCase):
 
 @unittest.skipIf(IS_PYPY, "pypy skip known failure")  # TODO
 class VisualTests(unittest.TestCase):
-
     __tags__ = ["interactive"]
 
     screen = None

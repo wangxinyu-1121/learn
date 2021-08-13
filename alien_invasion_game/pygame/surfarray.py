@@ -64,10 +64,10 @@ and wonder about the values.
 # import pygame._numpysurfarray as numpysf
 numpysf = None
 
-
 from pygame.pixelcopy import array_to_surface, make_surface as pc_make_surface
 
 __all__ = ["array_to_surface", "pc_make_surface"]
+
 
 def blit_array(surface, array):
     """pygame.surfarray.blit_array(Surface, array): return None
@@ -356,12 +356,14 @@ def use_arraytype(arraytype):
     if arraytype != "numpy":
         raise ValueError("invalid array type")
 
+
 def get_arraytype():
     """pygame.surfarray.get_arraytype(): return str
 
     DEPRECATED - only numpy arrays are now supported.
     """
     return "numpy"
+
 
 def get_arraytypes():
     """pygame.surfarray.get_arraytypes(): return tuple

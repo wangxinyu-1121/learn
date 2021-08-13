@@ -68,7 +68,6 @@ def SysFont(name, size, bold=0, italic=0, constructor=None):
        a Font instance. If None, a pygame.freetype.Font object is created.
     """
     if constructor is None:
-
         def constructor(fontpath, size, bold, italic):
             font = Font(fontpath, size)
             font.strong = bold

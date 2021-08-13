@@ -295,13 +295,12 @@ class SpriteCollideTest(unittest.TestCase):
 
         # This function is configurable using the mutable default arguments!
         def collided_callback(
-            spr_a,
-            spr_b,
-            arg_dict_a=arg_dict_a,
-            arg_dict_b=arg_dict_b,
-            return_container=return_container,
+                spr_a,
+                spr_b,
+                arg_dict_a=arg_dict_a,
+                arg_dict_b=arg_dict_b,
+                return_container=return_container,
         ):
-
             count = arg_dict_a.get(spr_a, 0)
             arg_dict_a[spr_a] = 1 + count
 
@@ -927,7 +926,6 @@ class LayeredGroupBase:
         self.LG.add(sprites)
         result = self.LG.get_sprites_at((50, 50))
         self.assertEqual(result, expected_sprites)
-
 
     def test_get_top_layer(self):
         layers = [1, 5, 2, 8, 4, 5, 3, 88, 23, 0]

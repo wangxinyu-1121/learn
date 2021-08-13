@@ -25,8 +25,8 @@ the local namespace for your module"""
 from pygame.constants import *  # pylint: disable=wildcard-import; lgtm[py/polluting-import]
 from pygame.rect import Rect
 import pygame.color as color
-Color = color.Color
 
+Color = color.Color
 
 __all__ = [
     'Rect',

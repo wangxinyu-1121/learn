@@ -6,7 +6,6 @@ Click a mouse button (if you have one!) and the cursor changes.
 """
 import pygame as pg
 
-
 arrow = (
     "xX                      ",
     "X.X                     ",
@@ -33,7 +32,6 @@ arrow = (
     "                        ",
     "                        ",
 )
-
 
 no = (
     "                        ",

@@ -6,7 +6,6 @@ import platform
 from pygame import Rect, Vector2, get_sdl_version
 from pygame.tests import test_utils
 
-
 PY3 = sys.version_info >= (3, 0, 0)
 SDL1 = get_sdl_version()[0] < 2
 IS_PYPY = "PyPy" == platform.python_implementation()
@@ -1591,11 +1590,11 @@ class RectTypeTest(unittest.TestCase):
             d = rect_values if use_values else rect_keys
 
             for zero_rect in (
-                zero_rect1,
-                zero_rect2,
-                zero_rect3,
-                zero_rect4,
-                zero_rect5,
+                    zero_rect1,
+                    zero_rect2,
+                    zero_rect3,
+                    zero_rect4,
+                    zero_rect5,
             ):
                 collide_item = zero_rect.collidedict(d, use_values)
 
@@ -1853,11 +1852,11 @@ class RectTypeTest(unittest.TestCase):
             d = rect_values if use_values else rect_keys
 
             for zero_rect in (
-                zero_rect1,
-                zero_rect2,
-                zero_rect3,
-                zero_rect4,
-                zero_rect5,
+                    zero_rect1,
+                    zero_rect2,
+                    zero_rect3,
+                    zero_rect4,
+                    zero_rect5,
             ):
                 collide_items = zero_rect.collidedictall(d, use_values)
 

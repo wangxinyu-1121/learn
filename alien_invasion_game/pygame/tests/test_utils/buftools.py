@@ -191,7 +191,7 @@ class Exporter(pygame.newbuffer.BufferMixin):
         return (addressof(self.buffer), self.shape[0])
 
     def tobytes(self):
-        return cast(self.buffer, POINTER(c_char))[0 : self._len]
+        return cast(self.buffer, POINTER(c_char))[0: self._len]
 
     def __len__(self):
         return self.shape[0]
@@ -202,15 +202,15 @@ class Exporter(pygame.newbuffer.BufferMixin):
         if (flags & PyBUF_WRITABLE) == PyBUF_WRITABLE and self.readonly:
             raise BufferError("buffer is read-only")
         if (
-            flags & PyBUF_C_CONTIGUOUS
+                    flags & PyBUF_C_CONTIGUOUS
         ) == PyBUF_C_CONTIGUOUS and not self.is_contiguous("C"):
             raise BufferError("data is not C contiguous")
         if (
-            flags & PyBUF_F_CONTIGUOUS
+                    flags & PyBUF_F_CONTIGUOUS
         ) == PyBUF_F_CONTIGUOUS and not self.is_contiguous("F"):
             raise BufferError("data is not F contiguous")
         if (
-            flags & PyBUF_ANY_CONTIGUOUS
+                    flags & PyBUF_ANY_CONTIGUOUS
         ) == PyBUF_ANY_CONTIGUOUS and not self.is_contiguous("A"):
             raise BufferError("data is not contiguous")
         view.buf = self.buf
@@ -335,7 +335,7 @@ class Importer(object):
 
         if addr is None:
             return None
-        return tuple(cast(addr, POINTER(c_ssize_t))[0 : self._view.ndim])
+        return tuple(cast(addr, POINTER(c_ssize_t))[0: self._view.ndim])
 
 
 class ExporterTest(unittest.TestCase):
@@ -593,7 +593,7 @@ class ExporterTest(unittest.TestCase):
         self.assertEqual(imp.strides, (25, 5))
 
     def check_args(
-        self, call_flags, shape, format, strides, length, bufsize, itemsize, offset=0
+            self, call_flags, shape, format, strides, length, bufsize, itemsize, offset=0
     ):
         format_arg = format if call_flags & 1 else None
         strides_arg = strides if call_flags & 2 else None

@@ -18,7 +18,6 @@ from time import time
 import pygame as pg
 from pygame.compat import xrange_
 
-
 if "-psyco" in sys.argv:
     try:
         import psyco
@@ -29,7 +28,6 @@ if "-psyco" in sys.argv:
 
 main_dir = os.path.split(os.path.abspath(__file__))[0]
 data_dir = os.path.join(main_dir, "data")
-
 
 # use this to use update rects or not.
 #  If the screen is mostly full, then update rects are not useful.
@@ -43,12 +41,10 @@ use_static = False
 if "-static" in sys.argv:
     use_static = True
 
-
 use_layered_dirty = False
 if "-layered_dirty" in sys.argv:
     update_rects = True
     use_layered_dirty = True
-
 
 flags = 0
 if "-flip" in sys.argv:
@@ -142,12 +138,12 @@ class Static(pg.sprite.DirtySprite):
 
 
 def main(
-    update_rects=True,
-    use_static=False,
-    use_layered_dirty=False,
-    screen_dims=[640, 480],
-    use_alpha=False,
-    flags=0,
+        update_rects=True,
+        use_static=False,
+        use_layered_dirty=False,
+        screen_dims=[640, 480],
+        use_alpha=False,
+        flags=0,
 ):
     """Show lots of sprites moving around
 

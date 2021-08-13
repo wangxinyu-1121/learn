@@ -7,7 +7,6 @@ Note there are comments here, but for the full explanation,
 follow along in the tutorial.
 """
 
-
 # Import Modules
 import os
 import pygame as pg

@@ -174,7 +174,6 @@ import warnings
 
 __all__ = ["Image", "Reader", "Writer", "write_chunks", "from_array"]
 
-
 # The PNG signature.
 # http://www.w3.org/TR/PNG/#5PNG-file-signature
 _signature = struct.pack("8B", 137, 80, 78, 71, 13, 10, 26, 10)
@@ -206,8 +205,10 @@ def isarray(x):
 try:
     bytes("", "ascii")
 
+
     def strtobytes(x):
         return bytes(x, "iso8859-1")
+
 
     def bytestostr(x):
         return str(x, "iso8859-1")
@@ -244,7 +245,7 @@ def interleave_planes(ipixels, apixels, ipsize, apsize):
     for i in range(ipsize):
         out[i:newtotal:newpsize] = ipixels[i:itotal:ipsize]
     for i in range(apsize):
-        out[i + ipsize : newtotal : newpsize] = apixels[i:atotal:apsize]
+        out[i + ipsize: newtotal: newpsize] = apixels[i:atotal:apsize]
     return out
 
 
@@ -303,24 +304,24 @@ class Writer:
     """
 
     def __init__(
-        self,
-        width=None,
-        height=None,
-        size=None,
-        greyscale=False,
-        alpha=False,
-        bitdepth=8,
-        palette=None,
-        transparent=None,
-        background=None,
-        gamma=None,
-        compression=None,
-        interlace=False,
-        bytes_per_sample=None,  # deprecated
-        planes=None,
-        colormap=None,
-        maxval=None,
-        chunk_limit=2 ** 20,
+            self,
+            width=None,
+            height=None,
+            size=None,
+            greyscale=False,
+            alpha=False,
+            bitdepth=8,
+            palette=None,
+            transparent=None,
+            background=None,
+            gamma=None,
+            compression=None,
+            interlace=False,
+            bytes_per_sample=None,  # deprecated
+            planes=None,
+            colormap=None,
+            maxval=None,
+            chunk_limit=2 ** 20,
     ):
         """
         Create a PNG encoder object.
@@ -473,10 +474,10 @@ class Writer:
                     raise ValueError("%s colour for greyscale must be integer" % which)
             else:
                 if not (
-                    len(c) == 3
-                    and isinteger(c[0])
-                    and isinteger(c[1])
-                    and isinteger(c[2])
+                                        len(c) == 3
+                                and isinteger(c[0])
+                            and isinteger(c[1])
+                        and isinteger(c[2])
                 ):
                     raise ValueError("%s colour must be a triple of integers" % which)
             return c
@@ -952,7 +953,7 @@ class Writer:
             for y in range(ystart, self.height, ystep):
                 if xstep == 1:
                     offset = y * vpr
-                    yield pixels[offset : offset + vpr]
+                    yield pixels[offset: offset + vpr]
                 else:
                     row = array(fmt)
                     # There's no easier way to set the length of an array
@@ -961,7 +962,7 @@ class Writer:
                     end_offset = (y + 1) * vpr
                     skip = self.planes * xstep
                     for i in range(self.planes):
-                        row[i :: self.planes] = pixels[offset + i : end_offset : skip]
+                        row[i:: self.planes] = pixels[offset + i: end_offset: skip]
                     yield row
 
 
@@ -1336,7 +1337,7 @@ class _readable:
         self.offset = 0
 
     def read(self, n):
-        r = self.buf[self.offset : self.offset + n]
+        r = self.buf[self.offset: self.offset + n]
         if isarray(r):
             r = tostring(r)
         self.offset += n
@@ -1601,7 +1602,7 @@ class Reader:
             for y in range(ystart, self.height, ystep):
                 filter_type = raw[source_offset]
                 source_offset += 1
-                scanline = raw[source_offset : source_offset + row_size]
+                scanline = raw[source_offset: source_offset + row_size]
                 source_offset += row_size
                 recon = self.undo_filter(filter_type, scanline, recon)
                 # Convert so that there is one element per pixel value
@@ -1609,13 +1610,13 @@ class Reader:
                 if xstep == 1:
                     assert xstart == 0
                     offset = y * vpr
-                    a[offset : offset + vpr] = flat
+                    a[offset: offset + vpr] = flat
                 else:
                     offset = y * vpr + xstart * self.planes
                     end_offset = (y + 1) * vpr
                     skip = self.planes * xstep
                     for i in range(self.planes):
-                        a[offset + i : end_offset : skip] = flat[i :: self.planes]
+                        a[offset + i: end_offset: skip] = flat[i:: self.planes]
         return a
 
     def iterboxed(self, rows):
@@ -1688,7 +1689,7 @@ class Reader:
             a.extend(some)
             while len(a) >= rb + 1:
                 filter_type = a[0]
-                scanline = a[1 : rb + 1]
+                scanline = a[1: rb + 1]
                 del a[: rb + 1]
                 recon = self.undo_filter(filter_type, scanline, recon)
                 yield recon
@@ -1777,7 +1778,7 @@ class Reader:
             # per pixel; check only indexed or greyscale images have
             # fewer than 8 bits per pixel.
             if (self.color_type & 1 and self.bitdepth > 8) or (
-                self.bitdepth < 8 and self.color_type not in (0, 3)
+                            self.bitdepth < 8 and self.color_type not in (0, 3)
             ):
                 raise FormatError(
                     "Illegal combination of bit depth (%d)"
@@ -1874,10 +1875,10 @@ class Reader:
         elif type == "sBIT":
             self.sbit = data
             if (
-                self.colormap
-                and len(data) != 3
-                or not self.colormap
-                and len(data) != self.planes
+                            self.colormap
+                        and len(data) != 3
+                    or not self.colormap
+                    and len(data) != self.planes
             ):
                 raise FormatError("sBIT chunk has incorrect length.")
 
@@ -2237,6 +2238,7 @@ class Reader:
 
         else:
             assert not meta["alpha"] and not meta["greyscale"]
+
             # RGB to RGBA
             def convert():
                 for row in pixels:

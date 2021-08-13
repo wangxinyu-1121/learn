@@ -32,6 +32,7 @@ The compile() function can convert these string cursors into cursor byte data.
 """
 
 import pygame
+
 _cursor_id_table = {
     pygame.SYSTEM_CURSOR_ARROW: "SYSTEM_CURSOR_ARROW",
     pygame.SYSTEM_CURSOR_IBEAM: "SYSTEM_CURSOR_IBEAM",
@@ -46,6 +47,7 @@ _cursor_id_table = {
     pygame.SYSTEM_CURSOR_NO: "SYSTEM_CURSOR_NO",
     pygame.SYSTEM_CURSOR_HAND: "SYSTEM_CURSOR_HAND",
 }
+
 
 class Cursor(object):
     def __init__(self, *args):
@@ -66,7 +68,7 @@ class Cursor(object):
             self.data = tuple([tuple(arg) for arg in args])
         else:
             raise TypeError("Arguments must match a cursor specification")
-            
+
     def __len__(self):
         return len(self.data)
 
@@ -85,15 +87,15 @@ class Cursor(object):
     def __repr__(self):
         if self.type == "system":
             id_string = _cursor_id_table.get(self.data[0], "constant lookup error")
-            return "<Cursor(type: system, constant: " + id_string +")>"
+            return "<Cursor(type: system, constant: " + id_string + ")>"
         if self.type == "bitmap":
             size = "size: " + str(self.data[0])
             hotspot = "hotspot: " + str(self.data[1])
-            return "<Cursor(type: bitmap, " + size + ", " + hotspot +")>"
+            return "<Cursor(type: bitmap, " + size + ", " + hotspot + ")>"
         if self.type == "color":
             hotspot = "hotspot: " + str(self.data[0])
             surf = repr(self.data[1])
-            return "<Cursor(type: color, " + hotspot + ", surf: " + surf +")>"
+            return "<Cursor(type: color, " + hotspot + ", surf: " + surf + ")>"
         raise TypeError("Invalid Cursor")
 
 
@@ -102,17 +104,22 @@ def set_cursor(*args):
     """set_cursor(pygame.cursors.Cursor OR args for a pygame.cursors.Cursor) -> None
     set the mouse cursor to a new cursor"""
     cursor = Cursor(*args)
-    pygame.mouse._set_cursor(**{cursor.type:cursor.data})
+    pygame.mouse._set_cursor(**{cursor.type: cursor.data})
+
+
 pygame.mouse.set_cursor = set_cursor
-del set_cursor # cleanup namespace
+del set_cursor  # cleanup namespace
+
 
 # Python side of the get_cursor function: C side in mouse.c
 def get_cursor():
     """get_cursor() -> pygame.cursors.Cursor
     get the current mouse cursor"""
     return Cursor(*pygame.mouse._get_cursor())
+
+
 pygame.mouse.get_cursor = get_cursor
-del get_cursor # cleanup namespace
+del get_cursor  # cleanup namespace
 
 arrow = Cursor(
     (16, 16),
@@ -215,7 +222,6 @@ tri_right = Cursor(
         3, 224, 3, 192, 3, 192, 1, 128,
     ),
 )
-
 
 # Here is an example string resource cursor. To use this:
 #    curs, mask = pygame.cursors.compile_cursor(pygame.cursors.thickarrow_strings, 'X', '.')
@@ -405,11 +411,12 @@ def load_xbm(curs, mask):
     with the readlines method. Not largely tested, but
     should work with typical XBM files.
     """
+
     def bitswap(num):
         val = 0
         for x in range(8):
-            b = num&(1<<x) != 0
-            val = val<<1 | b
+            b = num & (1 << x) != 0
+            val = val << 1 | b
         return val
 
     if type(curs) is type(''):
@@ -451,7 +458,7 @@ def load_xbm(curs, mask):
     for i, line in enumerate(curs):
         if line.startswith(possible_starts):
             break
-    data = ' '.join(curs[i+1:]).replace('};', '').replace(',', ' ')
+    data = ' '.join(curs[i + 1:]).replace('};', '').replace(',', ' ')
     cursdata = []
     for x in data.split():
         cursdata.append(bitswap(int(x, 16)))
@@ -459,7 +466,7 @@ def load_xbm(curs, mask):
     for i, line in enumerate(mask):
         if line.startswith(possible_starts):
             break
-    data = ' '.join(mask[i+1:]).replace('};', '').replace(',', ' ')
+    data = ' '.join(mask[i + 1:]).replace('};', '').replace(',', ' ')
     maskdata = []
     for x in data.split():
         maskdata.append(bitswap(int(x, 16)))

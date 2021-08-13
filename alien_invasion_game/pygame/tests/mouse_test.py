@@ -20,7 +20,6 @@ class MouseTests(unittest.TestCase):
 
 
 class MouseModuleInteractiveTest(MouseTests):
-
     __tags__ = ["interactive"]
 
     @unittest.skipIf(SDL1 and DARWIN, "Can fails on Mac SDL1, window not focused")
@@ -58,8 +57,8 @@ class MouseModuleInteractiveTest(MouseTests):
 
 class MouseModuleTest(MouseTests):
     @unittest.skipIf(os.environ.get("SDL_VIDEODRIVER", "") == "dummy",
-        "Cursors not supported on headless test machines",
-    )    
+                     "Cursors not supported on headless test machines",
+                     )
     def test_get_cursor(self):
         """Ensures get_cursor works correctly."""
 
@@ -105,7 +104,7 @@ class MouseModuleTest(MouseTests):
 
         with warnings.catch_warnings(record=True) as w:
             """From Pygame 2.0.1, set_system_cursor() should raise a deprecation warning"""
-            #Cause all warnings to always be triggered.
+            # Cause all warnings to always be triggered.
             warnings.simplefilter("always")
 
             # Error should be raised when the display is uninitialized
@@ -132,13 +131,13 @@ class MouseModuleTest(MouseTests):
                 pygame.mouse.set_system_cursor(pygame.SYSTEM_CURSOR_ARROW), None
             )
 
-            #Making sure the warnings are working properly
+            # Making sure the warnings are working properly
             self.assertEqual(len(w), 6)
             self.assertTrue(all([issubclass(warn.category, DeprecationWarning) for warn in w]))
 
     @unittest.skipIf(os.environ.get("SDL_VIDEODRIVER", "") == "dummy",
-        "Cursors not supported on headless test machines",
-    )
+                     "Cursors not supported on headless test machines",
+                     )
     def test_set_cursor(self):
         """Ensures set_cursor works correctly."""
 
@@ -154,7 +153,7 @@ class MouseModuleTest(MouseTests):
         system_cursor = pygame.cursors.Cursor(constant)
 
         # Color cursor information (also uses hotspot variable from Bitmap cursor info)
-        surface = pygame.Surface((10,10))
+        surface = pygame.Surface((10, 10))
         color_cursor = pygame.cursors.Cursor(hotspot, surface)
 
         pygame.display.quit()
@@ -227,7 +226,7 @@ class MouseModuleTest(MouseTests):
             pygame.mouse.set_cursor(constant)
             self.assertEqual(pygame.mouse.get_cursor(), system_cursor)
             pygame.mouse.set_cursor(system_cursor)
-            self.assertEqual(pygame.mouse.get_cursor(), system_cursor)  
+            self.assertEqual(pygame.mouse.get_cursor(), system_cursor)
 
             # Color: TypeError raised with invalid parameters
             with self.assertRaises(TypeError):
@@ -242,12 +241,12 @@ class MouseModuleTest(MouseTests):
             pygame.mouse.set_cursor(color_cursor)
             self.assertEqual(pygame.mouse.get_cursor(), color_cursor)
 
-            #Color: Working as intended + Surface with no references is returned okay
-            pygame.mouse.set_cursor((0,0), pygame.Surface((20,20)))
+            # Color: Working as intended + Surface with no references is returned okay
+            pygame.mouse.set_cursor((0, 0), pygame.Surface((20, 20)))
             cursor = pygame.mouse.get_cursor()
             self.assertEqual(cursor.type, "color")
-            self.assertEqual(cursor.data[0], (0,0))
-            self.assertEqual(cursor.data[1].get_size(), (20,20))     
+            self.assertEqual(cursor.data[0], (0, 0))
+            self.assertEqual(cursor.data[1].get_size(), (20, 20))
 
     def test_get_focused(self):
         """Ensures get_focused returns the correct type."""
@@ -302,7 +301,6 @@ class MouseModuleTest(MouseTests):
     def test_set_pos__invalid_pos(self):
         """Ensures set_pos handles invalid positions correctly."""
         for invalid_pos in ((1,), [1, 2, 3], 1, "1", (1, "1"), []):
-
             with self.assertRaises(TypeError):
                 pygame.mouse.set_pos(invalid_pos)
 

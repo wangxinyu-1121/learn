@@ -13,7 +13,7 @@ from . import import_submodule
 
 class PygameTestLoader(unittest.TestLoader):
     def __init__(
-        self, randomize_tests=False, include_incomplete=False, exclude=("interactive",)
+            self, randomize_tests=False, include_incomplete=False, exclude=("interactive",)
     ):
         super(PygameTestLoader, self).__init__()
         self.randomize_tests = randomize_tests

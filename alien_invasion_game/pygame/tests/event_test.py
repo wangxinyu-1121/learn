@@ -6,7 +6,6 @@ import collections
 import pygame
 from pygame.compat import as_unicode
 
-
 PY3 = sys.version_info >= (3, 0, 0)
 SDL1 = pygame.get_sdl_version()[0] < 2
 
@@ -35,13 +34,12 @@ EVENT_TYPES = (
 
 EVENT_TEST_PARAMS = collections.defaultdict(dict)
 EVENT_TEST_PARAMS.update({
-    pygame.KEYDOWN:{'key': pygame.K_SPACE},
-    pygame.KEYUP:{'key': pygame.K_SPACE},
-    pygame.MOUSEMOTION:dict(),
-    pygame.MOUSEBUTTONDOWN:dict(button=1),
-    pygame.MOUSEBUTTONUP:dict(button=1),
+    pygame.KEYDOWN: {'key': pygame.K_SPACE},
+    pygame.KEYUP: {'key': pygame.K_SPACE},
+    pygame.MOUSEMOTION: dict(),
+    pygame.MOUSEBUTTONDOWN: dict(button=1),
+    pygame.MOUSEBUTTONUP: dict(button=1),
 })
-
 
 NAMES_AND_EVENTS = (
     ("NoEvent", pygame.NOEVENT),
@@ -143,7 +141,7 @@ class EventTypeTest(unittest.TestCase):
             str(pygame.event.Event(EVENT_TYPES[0], a=as_unicode(r"\xed")))
         except UnicodeEncodeError:
             self.fail("Event object raised exception for non-ascii character")
-        # Passed.
+            # Passed.
 
 
 race_condition_notification = """
@@ -198,6 +196,7 @@ class EventModuleArgsTest(unittest.TestCase):
 class EventCustomTypeTest(unittest.TestCase):
     """Those tests are special in that they need the _custom_event counter to
     be reset before and/or after being run."""
+
     def setUp(self):
         pygame.quit()
         pygame.init()
@@ -256,20 +255,21 @@ class EventModuleTest(unittest.TestCase):
 
         # This does greedy matching, don't encode an NP-hard problem
         # into your input data, *please*
-        items_left=got[:]
+        items_left = got[:]
         for expected_element in expected:
             for item in items_left:
                 for key in expected_element.__dict__:
-                    if item.__dict__[key]!=expected_element.__dict__[key]:
+                    if item.__dict__[key] != expected_element.__dict__[key]:
                         break
                 else:
-                    #found item!
+                    # found item!
                     items_left.remove(item)
                     break
             else:
-                raise AssertionError("Expected "+str(expected_element)+" among remaining events "+str(items_left)+" out of "+str(got))
-        if len(items_left)>0:
-            raise AssertionError("Unexpected Events: "+str(items_left))
+                raise AssertionError("Expected " + str(expected_element) + " among remaining events " + str(
+                    items_left) + " out of " + str(got))
+        if len(items_left) > 0:
+            raise AssertionError("Unexpected Events: " + str(items_left))
 
     def setUp(self):
         pygame.display.init()
@@ -345,7 +345,7 @@ class EventModuleTest(unittest.TestCase):
     def test_post_and_get_keydown(self):
         """Ensure keydown events can be posted to the queue."""
         activemodkeys = pygame.key.get_mods()
-        
+
         events = [
             pygame.event.Event(pygame.KEYDOWN, key=pygame.K_p),
             pygame.event.Event(pygame.KEYDOWN, key=pygame.K_y, mod=activemodkeys),
@@ -354,7 +354,7 @@ class EventModuleTest(unittest.TestCase):
             pygame.event.Event(pygame.KEYDOWN, key=pygame.K_m, mod=None, window=None),
             pygame.event.Event(pygame.KEYDOWN, key=pygame.K_e, mod=activemodkeys, unicode="e")
         ]
-        
+
         for e in events:
             pygame.event.post(e)
             posted_event = pygame.event.poll()
@@ -781,7 +781,7 @@ class EventModuleTest(unittest.TestCase):
         ev = pygame.event.poll()
         # poll() on empty queue should return NOEVENT
         self.assertEqual(ev.type, pygame.NOEVENT)
-        
+
         # test poll returns stuff in same order
         e1 = pygame.event.Event(pygame.USEREVENT)
         e2 = pygame.event.Event(pygame.KEYDOWN, key=pygame.K_a)
@@ -789,11 +789,12 @@ class EventModuleTest(unittest.TestCase):
         pygame.event.post(e1)
         pygame.event.post(e2)
         pygame.event.post(e3)
-        
+
         self.assertEqual(pygame.event.poll().type, e1.type)
         self.assertEqual(pygame.event.poll().type, e2.type)
         self.assertEqual(pygame.event.poll().type, e3.type)
         self.assertEqual(pygame.event.poll().type, pygame.NOEVENT)
+
 
 ################################################################################
 

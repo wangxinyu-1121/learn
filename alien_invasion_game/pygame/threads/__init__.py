@@ -22,6 +22,7 @@ else:
     from Queue import Queue, Empty
 
 import threading
+
 Thread = threading.Thread
 
 STOP = object()
@@ -79,7 +80,7 @@ def benchmark_workers(a_bench_func=None, the_data=None):
     """
     global _use_workers
 
-    #TODO: try and make this scale better with slower/faster cpus.
+    # TODO: try and make this scale better with slower/faster cpus.
     #  first find some variables so that using 0 workers takes about 1.0 seconds.
     #  then go from there.
 
@@ -105,7 +106,7 @@ def benchmark_workers(a_bench_func=None, the_data=None):
 
     best = time.time() + 100000000
     best_number = 0
-    #last_best = -1
+    # last_best = -1
 
     for num_workers in range(0, MAX_WORKERS_TO_TEST):
 
@@ -122,7 +123,7 @@ def benchmark_workers(a_bench_func=None, the_data=None):
         print("total time num_workers:%s: time:%s:" % (num_workers, total_time))
 
         if total_time < best:
-            #last_best = best_number
+            # last_best = best_number
             best_number = num_workers
             best = total_time
 
@@ -135,7 +136,6 @@ def benchmark_workers(a_bench_func=None, the_data=None):
 
 
 class WorkerQueue(object):
-
     def __init__(self, num_workers=20):
         self.queue = Queue()
         self.pool = []
@@ -166,7 +166,7 @@ class WorkerQueue(object):
         for thread in self.pool:
             thread.join()
 
-    def threadloop(self): #, finish=False):
+    def threadloop(self):  # , finish=False):
         """ Loops until all of the tasks are finished.
         """
         while True:
@@ -180,7 +180,7 @@ class WorkerQueue(object):
             finally:
                 # clean up the queue, raise the exception.
                 self.queue.task_done()
-                #raise
+                # raise
 
     def wait(self):
         """ waits until all tasks are complete.
@@ -192,6 +192,7 @@ class FuncResult:
     """ Used for wrapping up a function call so that the results are stored
          inside the instances result attribute.
     """
+
     def __init__(self, f, callback=None, errback=None):
         """ f - is the function we that we call
             callback(result) - this is called when the function(f) returns
@@ -205,7 +206,7 @@ class FuncResult:
         self.errback = errback
 
     def __call__(self, *args, **kwargs):
-        #we try to call the function here.  If it fails we store the exception.
+        # we try to call the function here.  If it fails we store the exception.
         try:
             self.result = self.f(*args, **kwargs)
             if self.callback:
@@ -244,9 +245,9 @@ def tmap(f, seq_args, num_workers=20, worker_queue=None, wait=True, stop_on_erro
     if len(wq.pool) == 0:
         return map(f, seq_args)
 
-    #print ("queue size:%s" % wq.queue.qsize())
+    # print ("queue size:%s" % wq.queue.qsize())
 
-    #TODO: divide the data (seq_args) into even chunks and
+    # TODO: divide the data (seq_args) into even chunks and
     #       then pass each thread a map(f, equal_part(seq_args))
     #      That way there should be less locking, and overhead.
 
@@ -255,18 +256,18 @@ def tmap(f, seq_args, num_workers=20, worker_queue=None, wait=True, stop_on_erro
         results.append(FuncResult(f))
         wq.do(results[-1], sa)
 
-    #wq.stop()
+    # wq.stop()
 
     if wait:
-        #print ("wait")
+        # print ("wait")
         wq.wait()
-        #print ("after wait")
-        #print ("queue size:%s" % wq.queue.qsize())
+        # print ("after wait")
+        # print ("queue size:%s" % wq.queue.qsize())
         if wq.queue.qsize():
             raise Exception("buggy threadmap")
         # if we created a worker queue, we need to stop it.
         if not worker_queue and not _wq:
-            #print ("stoping")
+            # print ("stoping")
             wq.stop()
             if wq.queue.qsize():
                 um = wq.queue.get()

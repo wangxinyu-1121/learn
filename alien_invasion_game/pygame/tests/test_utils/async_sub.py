@@ -32,6 +32,7 @@ if platform.system() == "Windows":
         def encode(s):
             return s.encode("ascii")
 
+
         def decode(b):
             return b.decode("ascii")
 
@@ -39,6 +40,7 @@ if platform.system() == "Windows":
         # Strings only; do nothing
         def encode(s):
             return s
+
 
         def decode(b):
             return b
@@ -49,6 +51,7 @@ if platform.system() == "Windows":
 
         kernel32 = ctypes.windll.kernel32
         TerminateProcess = ctypes.windll.kernel32.TerminateProcess
+
 
         def WriteFile(handle, data, ol=None):
             c_written = DWORD()
@@ -61,6 +64,7 @@ if platform.system() == "Windows":
             )
             return ctypes.windll.kernel32.GetLastError(), c_written.value
 
+
         def ReadFile(handle, desired_bytes, ol=None):
             c_read = DWORD()
             buffer = ctypes.create_string_buffer(desired_bytes + 1)
@@ -69,6 +73,7 @@ if platform.system() == "Windows":
             )
             buffer[c_read.value] = null_byte
             return ctypes.windll.kernel32.GetLastError(), decode(buffer.value)
+
 
         def PeekNamedPipe(handle, desired_bytes):
             c_avail = DWORD()
@@ -111,6 +116,7 @@ else:
 ################################### CONSTANTS ##################################
 
 PIPE = subprocess.PIPE
+
 
 ################################################################################
 

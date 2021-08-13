@@ -1,11 +1,9 @@
-
 import pygame
 import numpy
 
 import opencv
-#this is important for capturing/displaying images
+# this is important for capturing/displaying images
 from opencv import highgui
-
 
 
 def list_cameras():
@@ -14,15 +12,16 @@ def list_cameras():
     # -1 for opencv means get any of them.
     return [-1]
 
+
 def init():
     pass
+
 
 def quit():
     pass
 
 
 class Camera:
-
     def __init__(self, device=0, size=(640, 480), mode="RGB"):
         """
         """
@@ -61,7 +60,7 @@ class Camera:
     def get_surface(self, dest_surf=None):
         camera = self.camera
         im = highgui.cvQueryFrame(camera)
-        #convert Ipl image to PIL image
+        # convert Ipl image to PIL image
         if not im:
             return None
         xx = opencv.adaptors.Ipl2NumPy(im)
@@ -76,7 +75,6 @@ class Camera:
 
 
 if __name__ == "__main__":
-
     # try and use this camera stuff with the pygame camera example.
     import pygame.examples.camera
 

@@ -21,7 +21,6 @@ import pygame.surfarray
 
 arraytype = "numpy"
 
-
 IS_PYPY = "PyPy" == platform.python_implementation()
 
 

@@ -3,7 +3,6 @@ import unittest
 
 class OverlayTypeTest(unittest.TestCase):
     def todo_test_display(self):
-
         # __doc__ (as of 2008-08-02) for pygame.overlay.overlay.display:
 
         # Overlay.display((y, u, v)): return None
@@ -13,7 +12,6 @@ class OverlayTypeTest(unittest.TestCase):
         self.fail()
 
     def todo_test_get_hardware(self):
-
         # __doc__ (as of 2008-08-02) for pygame.overlay.overlay.get_hardware:
 
         # Overlay.get_hardware(rect): return int
@@ -22,7 +20,6 @@ class OverlayTypeTest(unittest.TestCase):
         self.fail()
 
     def todo_test_set_location(self):
-
         # __doc__ (as of 2008-08-02) for pygame.overlay.overlay.set_location:
 
         # Overlay.set_location(rect): return None

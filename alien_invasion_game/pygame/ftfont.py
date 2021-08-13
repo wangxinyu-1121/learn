@@ -147,13 +147,16 @@ class Font(_Font):
 
         return self.get_rect(text).size
 
+
 FontType = Font
+
 
 def get_init():
     """get_init() -> bool
        true if the font module is initialized"""
 
     return _get_init()
+
 
 def SysFont(name, size, bold=0, italic=0, constructor=None):
     """pygame.ftfont.SysFont(name, size, bold=False, italic=False, constructor=None) -> Font
@@ -186,5 +189,6 @@ def SysFont(name, size, bold=0, italic=0, constructor=None):
             return font
 
     return _SysFont(name, size, bold, italic, constructor)
+
 
 del _Font, get_default_resolution, encode_file_path, as_unicode, as_bytes

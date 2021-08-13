@@ -74,12 +74,10 @@ full = 0
 
 tex = Image(tex)
 
-
 surf = pg.Surface((64, 64))
 streamtex = Texture(renderer, (64, 64), streaming=True)
 tex_update_interval = 1000
 next_tex_update = pg.time.get_ticks()
-
 
 while running:
     for event in pg.event.get():
@@ -87,9 +85,9 @@ while running:
             running = False
         elif getattr(event, "window", None) == win2:
             if (
-                event.type == pg.KEYDOWN
-                and event.key == pg.K_ESCAPE
-                or event.type == pg.WINDOWCLOSE
+                                event.type == pg.KEYDOWN
+                        and event.key == pg.K_ESCAPE
+                    or event.type == pg.WINDOWCLOSE
             ):
                 win2.destroy()
         elif event.type == pg.KEYDOWN:

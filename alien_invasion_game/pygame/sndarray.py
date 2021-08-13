@@ -47,6 +47,7 @@ if the sound sample type requests this.
 # import pygame._numpysndarray as numpysnd
 numpysnd = None
 
+
 def array(sound):
     """pygame.sndarray.array(Sound): return array
 
@@ -80,6 +81,7 @@ def samples(sound):
         import pygame._numpysndarray as numpysnd
         return numpysnd.samples(sound)
 
+
 def make_sound(array):
     """pygame.sndarray.make_sound(array): return Sound
 
@@ -96,6 +98,7 @@ def make_sound(array):
         import pygame._numpysndarray as numpysnd
         return numpysnd.make_sound(array)
 
+
 def use_arraytype(arraytype):
     """pygame.sndarray.use_arraytype(arraytype): return None
 
@@ -105,12 +108,14 @@ def use_arraytype(arraytype):
     if arraytype != 'numpy':
         raise ValueError("invalid array type")
 
+
 def get_arraytype():
     """pygame.sndarray.get_arraytype(): return str
 
     DEPRECATED - only numpy arrays are now supported.
     """
     return 'numpy'
+
 
 def get_arraytypes():
     """pygame.sndarray.get_arraytypes(): return tuple

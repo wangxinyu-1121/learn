@@ -6,7 +6,6 @@ import pygame
 from pygame.compat import as_bytes
 import pygame.sndarray
 
-
 SDL2 = pygame.get_sdl_version()[0] >= 2
 
 

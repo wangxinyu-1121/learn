@@ -13,7 +13,6 @@ from pygame.compat import unicode_
 import sys
 import locale
 
-
 if sys.version_info >= (3,):
 
     def print_unicode(s):

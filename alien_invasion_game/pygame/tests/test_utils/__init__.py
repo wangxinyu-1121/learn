@@ -16,7 +16,6 @@ try:
 except NameError:
     raw_input_ = input
 
-
 if sys.version_info[0] == 3:
 
     def tostring(row):
@@ -33,15 +32,18 @@ else:
         """
         return row.tostring()
 
+
     import unittest
 
     if not hasattr(unittest.TestCase, "subTest"):
         import contextlib
 
+
         @contextlib.contextmanager
         def subTest(self, msg=None, **params):
             yield
             return
+
 
         unittest.TestCase.subTest = subTest
 
@@ -255,6 +257,5 @@ def test():
     ]
 
     print("Tests: OK")
-
 
 ################################################################################

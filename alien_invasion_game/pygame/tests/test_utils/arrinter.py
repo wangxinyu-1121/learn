@@ -26,7 +26,6 @@ except NameError:
         c_size_t = c_ulonglong
         c_ssize_t = c_longlong
 
-
 SIZEOF_VOID_P = sizeof(c_void_p)
 if SIZEOF_VOID_P <= sizeof(c_int):
     Py_intptr_t = c_int
@@ -91,6 +90,7 @@ if sys.version_info >= (3,):  # Python3
     PyCapsule_New.restype = py_object
     PyCapsule_New.argtypes = [c_void_p, c_char_p, POINTER(PyCapsule_Destructor)]
 
+
     def capsule_new(p):
         return PyCapsule_New(addressof(p), None, None)
 
@@ -101,9 +101,9 @@ else:
     PyCObject_FromVoidPtr.restype = py_object
     PyCObject_FromVoidPtr.argtypes = [c_void_p, POINTER(PyCObject_Destructor)]
 
+
     def capsule_new(p):
         return PyCObject_FromVoidPtr(addressof(p), None)
-
 
 PAI_CONTIGUOUS = 0x01
 PAI_FORTRAN = 0x02
@@ -188,7 +188,7 @@ def format_strides(nd, strides):
 
 class Exporter(object):
     def __init__(
-        self, shape, typekind=None, itemsize=None, strides=None, descr=None, flags=None
+            self, shape, typekind=None, itemsize=None, strides=None, descr=None, flags=None
     ):
         if typekind is None:
             typekind = "u"
@@ -349,7 +349,7 @@ class ExporterTest(unittest.TestCase):
         self.assertFalse(a.is_contiguous("A"))
 
     def check_args(
-        self, call_flags, shape, typekind, strides, length, bufsize, itemsize, offset=0
+            self, call_flags, shape, typekind, strides, length, bufsize, itemsize, offset=0
     ):
         if call_flags & 1:
             typekind_arg = typekind
@@ -365,8 +365,8 @@ class ExporterTest(unittest.TestCase):
         m = ArrayInterface(a)
         self.assertEqual(m.data, a.data)
         self.assertEqual(m.itemsize, itemsize)
-        self.assertEqual(tuple(m.shape[0 : m.nd]), shape)
-        self.assertEqual(tuple(m.strides[0 : m.nd]), strides)
+        self.assertEqual(tuple(m.shape[0: m.nd]), shape)
+        self.assertEqual(tuple(m.strides[0: m.nd]), strides)
 
 
 class ArrayTest(unittest.TestCase):

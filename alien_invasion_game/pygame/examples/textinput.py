@@ -54,6 +54,7 @@ Font = freetype.SysFont(FONTNAMES, 24)
 FontSmall = freetype.SysFont(FONTNAMES, 16)
 print("Using font: " + Font.name)
 
+
 # Main loop process
 def main():
     global BGCOLOR, PRINT_EVENT, CHATBOX_POS, CHATLIST_POS, CHATLIST_MAXSIZE
@@ -93,20 +94,20 @@ def main():
                 if event.key == pg.K_BACKSPACE:
                     if len(_IMEText) > 0 and _IMETextPos > 0:
                         _IMEText = (
-                            _IMEText[0 : _IMETextPos - 1] + _IMEText[_IMETextPos:]
+                            _IMEText[0: _IMETextPos - 1] + _IMEText[_IMETextPos:]
                         )
                         _IMETextPos = max(0, _IMETextPos - 1)
 
                 elif event.key == pg.K_DELETE:
-                    _IMEText = _IMEText[0:_IMETextPos] + _IMEText[_IMETextPos + 1 :]
+                    _IMEText = _IMEText[0:_IMETextPos] + _IMEText[_IMETextPos + 1:]
                 elif event.key == pg.K_LEFT:
                     _IMETextPos = max(0, _IMETextPos - 1)
                 elif event.key == pg.K_RIGHT:
                     _IMETextPos = min(len(_IMEText), _IMETextPos + 1)
 
                 elif (
-                    event.key in [pg.K_RETURN, pg.K_KP_ENTER]
-                    and len(event.unicode) == 0
+                                event.key in [pg.K_RETURN, pg.K_KP_ENTER]
+                        and len(event.unicode) == 0
                 ):
                     # Block if we have no text to append
                     if len(_IMEText) == 0:

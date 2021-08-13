@@ -146,7 +146,7 @@ def extract_tracebacks(output):
     else:
         dots = DOTS.search(output).group(1)
         if "E" in dots or "F" in dots:
-            return output[len(dots) + 1 :].split(RAN_TESTS_DIV)[0]
+            return output[len(dots) + 1:].split(RAN_TESTS_DIV)[0]
     return ""
 
 
@@ -260,14 +260,14 @@ def get_test_results(raw_return):
 
 
 def run_test(
-    module,
-    incomplete=False,
-    usesubprocess=True,
-    randomize=False,
-    exclude=("interactive",),
-    buffer=True,
-    unbuffered=None,
-    verbosity=1,
+        module,
+        incomplete=False,
+        usesubprocess=True,
+        randomize=False,
+        exclude=("interactive",),
+        buffer=True,
+        unbuffered=None,
+        verbosity=1,
 ):
     """Run a unit test module
     """

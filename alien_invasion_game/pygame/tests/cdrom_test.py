@@ -3,7 +3,6 @@ from pygame.tests.test_utils import question, prompt
 
 import pygame
 
-
 pygame.cdrom.init()
 # The number of CD drives available for testing.
 CD_DRIVE_COUNT = pygame.cdrom.get_count()
@@ -18,7 +17,6 @@ class CDROMModuleTest(unittest.TestCase):
         pygame.cdrom.quit()
 
     def todo_test_CD(self):
-
         # __doc__ (as of 2008-08-02) for pygame.cdrom.CD:
 
         # pygame.cdrom.CD(id): return CD
@@ -109,7 +107,6 @@ class CDTypeTest(unittest.TestCase):
         self.assertTrue(response)
 
     def todo_test_get_all(self):
-
         # __doc__ (as of 2008-08-02) for pygame.cdrom.CD.get_all:
 
         # CD.get_all(): return [(audio, start, end, lenth), ...]
@@ -125,7 +122,6 @@ class CDTypeTest(unittest.TestCase):
         self.fail()
 
     def todo_test_get_busy(self):
-
         # __doc__ (as of 2008-08-02) for pygame.cdrom.CD.get_busy:
 
         # CD.get_busy(): return bool
@@ -136,7 +132,6 @@ class CDTypeTest(unittest.TestCase):
         self.fail()
 
     def todo_test_get_current(self):
-
         # __doc__ (as of 2008-08-02) for pygame.cdrom.CD.get_current:
 
         # CD.get_current(): return track, seconds
@@ -168,7 +163,6 @@ class CDTypeTest(unittest.TestCase):
         self.assertTrue(self._cd.get_init())
 
     def todo_test_get_numtracks(self):
-
         # __doc__ (as of 2008-08-02) for pygame.cdrom.CD.get_numtracks:
 
         # CD.get_numtracks(): return count
@@ -181,7 +175,6 @@ class CDTypeTest(unittest.TestCase):
         self.fail()
 
     def todo_test_get_paused(self):
-
         # __doc__ (as of 2008-08-02) for pygame.cdrom.CD.get_paused:
 
         # CD.get_paused(): return bool
@@ -192,7 +185,6 @@ class CDTypeTest(unittest.TestCase):
         self.fail()
 
     def todo_test_get_track_audio(self):
-
         # __doc__ (as of 2008-08-02) for pygame.cdrom.CD.get_track_audio:
 
         # CD.get_track_audio(track): return bool
@@ -207,7 +199,6 @@ class CDTypeTest(unittest.TestCase):
         self.fail()
 
     def todo_test_get_track_length(self):
-
         # __doc__ (as of 2008-08-02) for pygame.cdrom.CD.get_track_length:
 
         # CD.get_track_length(track): return seconds
@@ -219,7 +210,6 @@ class CDTypeTest(unittest.TestCase):
         self.fail()
 
     def todo_test_get_track_start(self):
-
         # __doc__ (as of 2008-08-02) for pygame.cdrom.CD.get_track_start:
 
         # CD.get_track_start(track): return seconds
@@ -238,7 +228,6 @@ class CDTypeTest(unittest.TestCase):
         self.assertTrue(self._cd.get_init())
 
     def todo_test_pause(self):
-
         # __doc__ (as of 2008-08-02) for pygame.cdrom.CD.pause:
 
         # CD.pause(): return None
@@ -253,7 +242,6 @@ class CDTypeTest(unittest.TestCase):
         self.fail()
 
     def todo_test_play(self):
-
         # __doc__ (as of 2008-08-02) for pygame.cdrom.CD.play:
 
         # CD.init(): return None
@@ -288,7 +276,6 @@ class CDTypeTest(unittest.TestCase):
         self.assertFalse(self._cd.get_init())
 
     def todo_test_resume(self):
-
         # __doc__ (as of 2008-08-02) for pygame.cdrom.CD.resume:
 
         # CD.resume(): return None
@@ -301,7 +288,6 @@ class CDTypeTest(unittest.TestCase):
         self.fail()
 
     def todo_test_stop(self):
-
         # __doc__ (as of 2008-08-02) for pygame.cdrom.CD.stop:
 
         # CD.stop(): return None

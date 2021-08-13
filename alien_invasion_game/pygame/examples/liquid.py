@@ -64,7 +64,6 @@ def main():
 if __name__ == "__main__":
     main()
 
-
 """BTW, here is the code from the BlitzBasic example this was derived
 from. i've snipped the sound and text stuff out.
 -----------------------------------------------------------------

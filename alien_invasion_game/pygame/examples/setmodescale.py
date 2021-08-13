@@ -17,7 +17,7 @@ RES = (160, 120)
 FPS = 30
 clock = pg.time.Clock()
 
-print ("desktops", pg.display.get_desktop_sizes())
+print("desktops", pg.display.get_desktop_sizes())
 screen = pg.display.set_mode(RES, pg.SCALED | pg.RESIZABLE)
 
 # MAIN LOOP

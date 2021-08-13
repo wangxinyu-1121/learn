@@ -21,7 +21,6 @@ from pygame._sdl2 import (
 )
 from pygame._sdl2.mixer import set_post_mix
 
-
 pg.mixer.pre_init(44100, 32, 2, 512)
 pg.init()
 
@@ -70,7 +69,6 @@ audio.pause(0)
 
 print("recording with :%s:" % names[0])
 time.sleep(5)
-
 
 print("Turning data into a pg.mixer.Sound")
 sound = pg.mixer.Sound(buffer=b"".join(sound_chunks))

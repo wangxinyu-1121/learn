@@ -30,7 +30,6 @@ from pygame.compat import xrange_, PY_MAJOR_VERSION, unicode_
 if sys.platform == 'darwin':
     import xml.etree.ElementTree as ET
 
-
 OpenType_extensions = frozenset(('.ttf', '.ttc', '.otf'))
 Sysfonts = {}
 Sysalias = {}
@@ -40,6 +39,8 @@ if PY_MAJOR_VERSION >= 3:
     def toascii(raw):
         """convert bytes to ASCII-only string"""
         return raw.decode('ascii', 'ignore')
+
+
     if os.name == 'nt':
         import winreg as _winreg
     else:
@@ -48,6 +49,8 @@ else:
     def toascii(raw):
         """return ASCII characters of a given unicode or 8-bit string"""
         return raw.decode('ascii', 'ignore')
+
+
     if os.name == 'nt':
         import _winreg
     else:

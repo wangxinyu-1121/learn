@@ -11,6 +11,7 @@ from pygame.compat import xrange_
 SR = (800, 600)
 ovl = None
 
+
 ########################################################################
 # Simple video player
 def vPlayer(fName):

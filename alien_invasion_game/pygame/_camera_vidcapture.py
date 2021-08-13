@@ -7,6 +7,7 @@ Binary windows wheels:
 """
 import pygame
 
+
 def list_cameras():
     """Always only lists one camera.
 
@@ -15,14 +16,15 @@ def list_cameras():
     return [0]
 
     # this just cycles through all the cameras trying to open them
-    #cameras = []
-    #for x in range(256):
+    # cameras = []
+    # for x in range(256):
     #    try:
     #        c = Camera(x)
     #    except:
     #        break
     #    cameras.append(x)
-    #return cameras
+    # return cameras
+
 
 def init():
     global vidcap
@@ -32,13 +34,13 @@ def init():
         from VideoCapture import vidcap as vc
     vidcap = vc
 
+
 def quit():
     global vidcap
     vidcap = None
 
 
 class Camera:
-
     def __init__(self, device=0, size=(640, 480), mode="RGB", show_video_window=0):
         """device:  VideoCapture enumerates the available video capture devices
                     on your system.  If you have more than one device, specify
@@ -110,6 +112,7 @@ class Camera:
         else:
             dest_surf = surf
         return dest_surf
+
 
 if __name__ == "__main__":
     import pygame.examples.camera

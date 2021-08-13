@@ -615,7 +615,7 @@ class DrawEllipseMixin(object):
                 drawn_pixel = False
                 for x in range(width + 1):
                     if not drawn_pixel and surface.get_at((x, y)) == pygame.Color('RED') or \
-                           drawn_pixel and surface.get_at((x, y)) == pygame.Color('BLACK'):
+                                    drawn_pixel and surface.get_at((x, y)) == pygame.Color('BLACK'):
                         drawn_pixel = not drawn_pixel
                         number_of_changes += 1
                 if y < thickness or y > height - thickness - 1:
@@ -666,7 +666,7 @@ class DrawEllipseMixin(object):
             surface.unlock()
 
     def _check_1_pixel_sized_ellipse(
-        self, surface, collide_rect, surface_color, ellipse_color
+            self, surface, collide_rect, surface_color, ellipse_color
     ):
         # Helper method to check the surface for 1 pixel wide and/or high
         # ellipses.
@@ -958,7 +958,7 @@ class DrawEllipseMixin(object):
         big_rect = surf_rect.inflate(min_width * 2 + 1, min_height * 2 + 1)
 
         for pos in rect_corners_mids_and_center(
-            surf_rect
+                surf_rect
         ) + rect_corners_mids_and_center(big_rect):
             # Each of the ellipse's rect position attributes will be set to
             # the pos value.
@@ -2243,19 +2243,19 @@ class LinesMixin(BaseLineMixin):
                 self.draw_lines(surface, expected_color, True, endpoints, 3)
 
                 for t in (-1, 0, 1):
-                    for x in range(x_left, x_right+1):
+                    for x in range(x_left, x_right + 1):
                         for y in (y_top, y_bottom):
                             pos = (x, y + t)
                             self.assertEqual(
-                                    surface.get_at(pos), expected_color,
-                                    "pos={}".format(pos)
+                                surface.get_at(pos), expected_color,
+                                "pos={}".format(pos)
                             )
-                    for y in range(y_top, y_bottom+1):
+                    for y in range(y_top, y_bottom + 1):
                         for x in (x_left, x_right):
                             pos = (x + t, y)
                             self.assertEqual(
-                                    surface.get_at(pos), expected_color,
-                                    "pos={}".format(pos)
+                                surface.get_at(pos), expected_color,
+                                "pos={}".format(pos)
                             )
 
     def test_lines__gaps(self):
@@ -2284,24 +2284,24 @@ class LinesMixin(BaseLineMixin):
                          (x_right, y_bottom))
             self.draw_lines(surface, expected_color, True, endpoints, 3)
 
-            for x in range(x_left, x_right+1):
+            for x in range(x_left, x_right + 1):
                 for t in (-1, 0, 1):
                     pos = (x, y_top + t)
                     self.assertEqual(
-                            surface.get_at(pos), expected_color,
-                            "pos={}".format(pos)
+                        surface.get_at(pos), expected_color,
+                        "pos={}".format(pos)
                     )
                     pos = (x, y_top + t + ((x - 3) // 5))
                     self.assertEqual(
-                            surface.get_at(pos), expected_color,
-                            "pos={}".format(pos)
+                        surface.get_at(pos), expected_color,
+                        "pos={}".format(pos)
                     )
-            for y in range(y_top, y_bottom+1):
+            for y in range(y_top, y_bottom + 1):
                 for t in (-1, 0, 1):
                     pos = (x_right + t, y)
                     self.assertEqual(
-                            surface.get_at(pos), expected_color,
-                            "pos={}".format(pos)
+                        surface.get_at(pos), expected_color,
+                        "pos={}".format(pos)
                     )
 
     def test_lines__bounding_rect(self):
@@ -2446,11 +2446,11 @@ class AALineMixin(BaseLineMixin):
     def test_aaline__blend_warning(self):
         """From pygame 2, blend=False should raise DeprecationWarning."""
         with warnings.catch_warnings(record=True) as w:
-            #Cause all warnings to always be triggered.
+            # Cause all warnings to always be triggered.
             warnings.simplefilter("always")
-            #Trigger DeprecationWarning.
+            # Trigger DeprecationWarning.
             self.draw_aaline(pygame.Surface((2, 2)), (0, 0, 0, 50), (0, 0), (2, 2), False)
-            #Check if there is only one warning and is a DeprecationWarning.
+            # Check if there is only one warning and is a DeprecationWarning.
             self.assertEqual(len(w), 1)
             self.assertTrue(issubclass(w[-1].category, DeprecationWarning))
 
@@ -2997,7 +2997,7 @@ class DrawAALineTest(AALineMixin, DrawTestCase):
             self.assertGreater(surface.get_at((1, 1)).b, 0, "there should be blue here")
 
     def _check_antialiasing(
-        self, from_point, to_point, should, check_points, set_endpoints=True
+            self, from_point, to_point, should, check_points, set_endpoints=True
     ):
         """Draw a line between two points and check colors of check_points."""
         if set_endpoints:
@@ -3232,17 +3232,17 @@ class DrawAALineTest(AALineMixin, DrawTestCase):
         }
 
         for dx, dy in (
-            (-4, 0),
-            (4, 0),  # moved to left and right borders
-            (0, -5),
-            (0, -4),
-            (0, -3),  # upper border
-            (0, 5),
-            (0, 6),
-            (0, 7),  # lower border
-            (-4, -4),
-            (-4, -3),
-            (-3, -4),
+                (-4, 0),
+                (4, 0),  # moved to left and right borders
+                (0, -5),
+                (0, -4),
+                (0, -3),  # upper border
+                (0, 5),
+                (0, 6),
+                (0, 7),  # lower border
+                (-4, -4),
+                (-4, -3),
+                (-3, -4),
         ):  # upper left corner
             first = from_point[0] + dx, from_point[1] + dy
             second = to_point[0] + dx, to_point[1] + dy
@@ -3279,11 +3279,11 @@ class AALinesMixin(BaseLineMixin):
     def test_aalines__blend_warning(self):
         """From pygame 2, blend=False should raise DeprecationWarning."""
         with warnings.catch_warnings(record=True) as w:
-            #Cause all warnings to always be triggered.
+            # Cause all warnings to always be triggered.
             warnings.simplefilter("always")
-            #Trigger DeprecationWarning.
+            # Trigger DeprecationWarning.
             self.draw_aalines(pygame.Surface((2, 2)), (0, 0, 0, 50), False, ((0, 0), (1, 1)), False)
-            #Check if there is only one warning and is a DeprecationWarning.
+            # Check if there is only one warning and is a DeprecationWarning.
             self.assertEqual(len(w), 1)
             self.assertTrue(issubclass(w[-1].category, DeprecationWarning))
 
@@ -4312,7 +4312,7 @@ class DrawPolygonMixin(object):
         big_rect = surf_rect.inflate(min_width * 2 + 1, min_height * 2 + 1)
 
         for pos in rect_corners_mids_and_center(
-            surf_rect
+                surf_rect
         ) + rect_corners_mids_and_center(big_rect):
             # A rect (pos_rect) is used to help create and position the
             # polygon. Each of this rect's position attributes will be set to
@@ -4936,7 +4936,7 @@ class DrawRectMixin(object):
         big_rect = surf_rect.inflate(min_width * 2 + 1, min_height * 2 + 1)
 
         for pos in rect_corners_mids_and_center(
-            surf_rect
+                surf_rect
         ) + rect_corners_mids_and_center(big_rect):
             # Each of the rect's position attributes will be set to the pos
             # value.
@@ -5311,7 +5311,7 @@ class DrawCircleMixin(object):
                 "draw_top_right": True,
                 "draw_top_left": True,
                 "draw_bottom_left": True,
-                "draw_bottom_right": "quadrant"   # Invalid draw_bottom_right
+                "draw_bottom_right": "quadrant"  # Invalid draw_bottom_right
             },
         ]
 
@@ -5405,7 +5405,8 @@ class DrawCircleMixin(object):
                 )
             else:
                 bounds_rect = self.draw_circle(
-                    surface, color, center, radius, width, draw_top_right, draw_top_left, draw_bottom_left, draw_bottom_right, **kwargs
+                    surface, color, center, radius, width, draw_top_right, draw_top_left, draw_bottom_left,
+                    draw_bottom_right, **kwargs
                 )
 
             self.assertIsInstance(bounds_rect, pygame.Rect)
@@ -5628,7 +5629,7 @@ class DrawCircleMixin(object):
         big_rect = surf_rect.inflate(max_radius * 2 - 1, max_radius * 2 - 1)
 
         for pos in rect_corners_mids_and_center(
-            surf_rect
+                surf_rect
         ) + rect_corners_mids_and_center(big_rect):
             # Test using different radius and thickness values.
             for radius in range(max_radius + 1):
@@ -5743,8 +5744,8 @@ class DrawCircleMixin(object):
             if (radius - width + 1) ** 2 < sqr_distance < (radius - 1) ** 2:
                 self.assertEqual(surface.get_at(pt), circle_color)
             if (
-                sqr_distance < (radius - width - 1) ** 2
-                or sqr_distance > (radius + 1) ** 2
+                            sqr_distance < (radius - width - 1) ** 2
+                    or sqr_distance > (radius + 1) ** 2
             ):
                 self.assertEqual(surface.get_at(pt), surface_color)
 
@@ -6261,7 +6262,7 @@ class DrawArcMixin(object):
         stop_angles = (0, 2, 3, 5, math.ceil(2 * math.pi))
 
         for pos in rect_corners_mids_and_center(
-            surf_rect
+                surf_rect
         ) + rect_corners_mids_and_center(big_rect):
             # Each of the arc's rect position attributes will be set to the pos
             # value.
@@ -6390,9 +6391,9 @@ class DrawModuleTest(unittest.TestCase):
         check_pts = [(x, y) for x in range(5) for y in range(5)]
 
         for method, is_polgon in (
-            (draw.lines, 0),
-            (draw.aalines, 0),
-            (draw.polygon, 1),
+                (draw.lines, 0),
+                (draw.aalines, 0),
+                (draw.polygon, 1),
         ):
             for val in bad_values:
                 # 1. at the beginning

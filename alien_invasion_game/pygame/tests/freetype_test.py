@@ -17,7 +17,6 @@ except ImportError:
 
 IS_PYPY = "PyPy" == platform.python_implementation()
 
-
 try:
     from pygame.tests.test_utils import arrinter
 except NameError:
@@ -30,7 +29,6 @@ try:
 except ImportError:
     ft = None
 from pygame.compat import as_unicode, bytes_, unichr_, unicode_
-
 
 FONTDIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fixtures", "fonts")
 
@@ -58,7 +56,6 @@ def surf_same_image(a, b):
 
 
 class FreeTypeFontTest(unittest.TestCase):
-
     _fixed_path = os.path.join(FONTDIR, "test_fixed.otf")
     _sans_path = os.path.join(FONTDIR, "test_sans.ttf")
     _mono_path = os.path.join(FONTDIR, "PyGameMono.otf")
@@ -1652,7 +1649,7 @@ class FreeTypeFontTest(unittest.TestCase):
             o = font.get_metrics("AB")
             self.assertEqual(getrefcount(o), 2)
             for i in range(len(o)):
-                 self.assertEqual(getrefcount(o[i]), 2, "refcount fail for item %d" % i)
+                self.assertEqual(getrefcount(o[i]), 2, "refcount fail for item %d" % i)
             o = font.get_sizes()
             self.assertEqual(getrefcount(o), 2)
             for i in range(len(o)):

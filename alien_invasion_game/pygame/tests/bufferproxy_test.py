@@ -5,7 +5,6 @@ import gc
 import ctypes
 import unittest
 
-
 import pygame
 from pygame.bufferproxy import BufferProxy
 from pygame.compat import as_bytes

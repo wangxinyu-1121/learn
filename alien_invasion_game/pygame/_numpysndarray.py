@@ -49,6 +49,7 @@ def array(sound):
 
     return numpy.array(sound, copy=True)
 
+
 def samples(sound):
     """pygame._numpysndarray.samples(Sound): return array
 
@@ -60,6 +61,7 @@ def samples(sound):
     """
 
     return numpy.array(sound, copy=False)
+
 
 def make_sound(array):
     """pygame._numpysndarray.make_sound(array): return Sound

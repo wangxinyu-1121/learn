@@ -29,7 +29,7 @@ import os
 
 # Choose Windows display driver
 if os.name == 'nt':
-    #pypy does not find the dlls, so we add package folder to PATH.
+    # pypy does not find the dlls, so we add package folder to PATH.
     pygame_dir = os.path.split(__file__)[0]
     os.environ['PATH'] = os.environ['PATH'] + ';' + pygame_dir
 
@@ -78,18 +78,21 @@ class MissingModule:
 # our modules is with the import command (not the __import__ function)
 
 # first, the "required" modules
-from pygame.base import * # pylint: disable=wildcard-import; lgtm[py/polluting-import]
+from pygame.base import *  # pylint: disable=wildcard-import; lgtm[py/polluting-import]
 from pygame.constants import *  # now has __all__ pylint: disable=wildcard-import; lgtm[py/polluting-import]
-from pygame.version import * # pylint: disable=wildcard-import; lgtm[py/polluting-import]
+from pygame.version import *  # pylint: disable=wildcard-import; lgtm[py/polluting-import]
 from pygame.rect import Rect
 from pygame.compat import PY_MAJOR_VERSION
 from pygame.rwobject import encode_string, encode_file_path
 import pygame.surflock
 import pygame.color
+
 Color = color.Color
 import pygame.bufferproxy
+
 BufferProxy = bufferproxy.BufferProxy
 import pygame.math
+
 Vector2 = pygame.math.Vector2
 Vector3 = pygame.math.Vector3
 
@@ -219,7 +222,6 @@ try:
 except (ImportError, IOError):
     Surface = lambda: Missing_Function
 
-
 try:
     import pygame.mask
     from pygame.mask import Mask
@@ -250,12 +252,14 @@ except (ImportError, IOError):
 if 'PYGAME_FREETYPE' in os.environ:
     try:
         import pygame.ftfont as font
+
         sys.modules['pygame.font'] = font
     except (ImportError, IOError):
         pass
 try:
     import pygame.font
     import pygame.sysfont
+
     pygame.font.SysFont = pygame.sysfont.SysFont
     pygame.font.get_fonts = pygame.sysfont.get_fonts
     pygame.font.match_font = pygame.sysfont.match_font
@@ -265,8 +269,8 @@ except (ImportError, IOError):
 # try and load pygame.mixer_music before mixer, for py2app...
 try:
     import pygame.mixer_music
-    #del pygame.mixer_music
-    #print ("NOTE2: failed importing pygame.mixer_music in lib/__init__.py")
+    # del pygame.mixer_music
+    # print ("NOTE2: failed importing pygame.mixer_music in lib/__init__.py")
 except (ImportError, IOError):
     pass
 
@@ -310,6 +314,7 @@ except (ImportError, IOError):
 # programs get everything they need (like py2exe)
 try:
     import pygame.imageext
+
     del pygame.imageext
 except (ImportError, IOError):
     pass
@@ -323,6 +328,7 @@ def packager_imports():
     import pygame.macosx
     import pygame.bufferproxy
     import pygame.colordict
+
 
 # make Rects pickleable
 if PY_MAJOR_VERSION >= 3:
@@ -338,6 +344,8 @@ def __rect_constructor(x, y, w, h):
 def __rect_reduce(r):
     assert type(r) == Rect
     return __rect_constructor, (r.x, r.y, r.w, r.h)
+
+
 copy_reg.pickle(Rect, __rect_reduce, __rect_constructor)
 
 
@@ -349,8 +357,9 @@ def __color_constructor(r, g, b, a):
 def __color_reduce(c):
     assert type(c) == Color
     return __color_constructor, (c.r, c.g, c.b, c.a)
-copy_reg.pickle(Color, __color_reduce, __color_constructor)
 
+
+copy_reg.pickle(Color, __color_reduce, __color_constructor)
 
 # Thanks for supporting pygame. Without support now, there won't be pygame later.
 if 'PYGAME_HIDE_SUPPORT_PROMPT' not in os.environ:
@@ -358,7 +367,6 @@ if 'PYGAME_HIDE_SUPPORT_PROMPT' not in os.environ:
         ver, *get_sdl_version() + sys.version_info[0:3]
     ))
     print('Hello from the pygame community. https://www.pygame.org/contribute.html')
-
 
 # cleanup namespace
 del pygame, os, sys, surflock, MissingModule, copy_reg, PY_MAJOR_VERSION

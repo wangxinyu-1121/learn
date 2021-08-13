@@ -637,7 +637,6 @@ class PixelArrayTypeTest(unittest.TestCase, TestMixin):
             # Ensure p1 ... pn are freed for array[...] = [p1, ..., pn]
             # Bug fix: reference counting.
             if hasattr(sys, "getrefcount"):
-
                 class Int(int):
                     """Unique int instances"""
 
@@ -680,16 +679,16 @@ class PixelArrayTypeTest(unittest.TestCase, TestMixin):
 
             # Test simple slicing
             self.assertEqual(len(ar[:, :]), 6)
-            self.assertEqual(len(ar[:,]), 6)
+            self.assertEqual(len(ar[:, ]), 6)
             self.assertEqual(len(ar[1, :]), 8)
             self.assertEqual(len(ar[:, 2]), 6)
             # Empty slices
-            self.assertEqual(ar[4:4,], None)
+            self.assertEqual(ar[4:4, ], None)
             self.assertEqual(ar[4:4, ...], None)
             self.assertEqual(ar[4:4, 2:2], None)
             self.assertEqual(ar[4:4, 1:4], None)
-            self.assertEqual(ar[4:4:2,], None)
-            self.assertEqual(ar[4:4:-2,], None)
+            self.assertEqual(ar[4:4:2, ], None)
+            self.assertEqual(ar[4:4:-2, ], None)
             self.assertEqual(ar[4:4:1, ...], None)
             self.assertEqual(ar[4:4:-1, ...], None)
             self.assertEqual(ar[4:4:1, 2:2], None)
@@ -792,7 +791,6 @@ class PixelArrayTypeTest(unittest.TestCase, TestMixin):
             # Ensure x and y are freed for p = array[x, y]
             # Bug fix: reference counting
             if hasattr(sys, "getrefcount"):
-
                 class Int(int):
                     """Unique int instances"""
 
@@ -834,7 +832,6 @@ class PixelArrayTypeTest(unittest.TestCase, TestMixin):
             # Ensure x and y are freed for array[x, y] = p
             # Bug fix: reference counting
             if hasattr(sys, "getrefcount"):
-
                 class Int(int):
                     """Unique int instances"""
 
@@ -1012,7 +1009,7 @@ class PixelArrayTypeTest(unittest.TestCase, TestMixin):
             self.assertEqual(ar[3][6], oval)
             self.assertEqual(ar[8][9], oval)
             self.assertEqual(ar[9][9], oval)
-        # print "replace end"
+            # print "replace end"
 
     def test_extract(self):
         # print "extract start"
@@ -1041,7 +1038,7 @@ class PixelArrayTypeTest(unittest.TestCase, TestMixin):
             self.assertEqual(newar[3][6], white)
             self.assertEqual(newar[8][9], black)
             self.assertEqual(newar[9][9], black)
-        # print "extract end"
+            # print "extract end"
 
     def test_2dslice_assignment(self):
         w = 2 * 5 * 8
@@ -1364,7 +1361,7 @@ class PixelArrayArrayInterfaceTest(unittest.TestCase, TestMixin):
         for f in factors[:-1]:
             w = w // f
             sf.fill((0, 0, 0))
-            ar = ar[f : f + w, :]
+            ar = ar[f: f + w, :]
             ar[0][0] = color
             ar[-1][-2] = color
             ar[0][-3] = color
@@ -1380,7 +1377,7 @@ class PixelArrayArrayInterfaceTest(unittest.TestCase, TestMixin):
         for f in factors[:-1]:
             h = h // f
             sf.fill((0, 0, 0))
-            ar = ar[:, f : f + h]
+            ar = ar[:, f: f + h]
             ar[0][0] = color
             ar[-1][-2] = color
             ar[0][-3] = color
@@ -1415,7 +1412,6 @@ class PixelArrayArrayInterfaceTest(unittest.TestCase, TestMixin):
 @unittest.skipIf(not pygame.HAVE_NEWBUF, "newbuf not implemented")
 @unittest.skipIf(IS_PYPY, "pypy2 having issues")
 class PixelArrayNewBufferTest(unittest.TestCase, TestMixin):
-
     if pygame.HAVE_NEWBUF:
         from pygame.tests.test_utils import buftools
 

@@ -41,7 +41,6 @@ except ImportError:
     print("numpy missing. The GLCUBE example requires: pyopengl numpy")
     raise SystemExit
 
-
 # do we want to use the 'modern' OpenGL API or the old one?
 # This example shows you how to do both.
 USE_MODERN_GL = True
@@ -552,7 +551,7 @@ def main():
         events = pg.event.get()
         for event in events:
             if event.type == pg.QUIT or (
-                event.type == pg.KEYDOWN and event.key == pg.K_ESCAPE
+                            event.type == pg.KEYDOWN and event.key == pg.K_ESCAPE
             ):
                 going = False
 

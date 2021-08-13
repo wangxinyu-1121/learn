@@ -14,6 +14,7 @@ import pygame as pg
 
 main_dir = os.path.split(os.path.abspath(__file__))[0]
 
+
 # our game object class
 class GameObject:
     def __init__(self, image, height, speed):

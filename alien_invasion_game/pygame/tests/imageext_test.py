@@ -36,6 +36,7 @@ class ImageextModuleTest(unittest.TestCase):
         im = pygame.Surface((10, 10), 0, 32)
         s = "foo.bar"
         self.assertRaises(pygame.error, imageext.save_extended, im, s)
+
     if sys.version_info >= (3, 0):
         def test_load_unknown_extension(self):
             s = "foo.bar"

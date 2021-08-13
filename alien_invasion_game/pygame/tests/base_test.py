@@ -13,7 +13,6 @@ except NameError:
     pass
 import pygame
 
-
 init_called = quit_called = 0
 
 
@@ -536,8 +535,8 @@ class BaseModuleTest(unittest.TestCase):
             # Scrap is optional.
             pass
 
-        # pygame.cdrom
-        # pygame.joystick
+            # pygame.cdrom
+            # pygame.joystick
 
     def init_assertions(self):
         self.assertTrue(pygame.get_init())

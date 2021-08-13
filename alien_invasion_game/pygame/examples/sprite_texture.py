@@ -16,7 +16,6 @@ if pg.get_sdl_version()[0] < 2:
     raise SystemExit("This example requires pygame 2 and SDL2.")
 from pygame._sdl2 import Window, Texture, Image, Renderer
 
-
 data_dir = os.path.join(os.path.split(os.path.abspath(__file__))[0], "data")
 
 

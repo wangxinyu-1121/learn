@@ -16,7 +16,6 @@ import pygame.camera
 
 
 class VideoCapturePlayer(object):
-
     size = (640, 480)
 
     def __init__(self, **argd):

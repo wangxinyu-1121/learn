@@ -17,12 +17,14 @@ pygame_folder = os.path.dirname(os.path.abspath(pygame_main_file))
 # datas is the variable that pyinstaller looks for while processing hooks
 datas = []
 
+
 # A helper to append the relative path of a resource to hook variable - datas
 def _append_to_datas(file_path):
     global datas
     res_path = os.path.join(pygame_folder, file_path)
     if os.path.exists(res_path):
         datas.append((res_path, "pygame"))
+
 
 # First append the font file, then based on the OS, append pygame icon file
 _append_to_datas("freesansbold.ttf")
@@ -31,7 +33,7 @@ if platform.system() == "Darwin":
 else:
     _append_to_datas("pygame_icon.bmp")
 
-if platform.system() == "Windows": 
+if platform.system() == "Windows":
     from PyInstaller.utils.hooks import collect_dynamic_libs
 
     pre_binaries = collect_dynamic_libs('pygame')

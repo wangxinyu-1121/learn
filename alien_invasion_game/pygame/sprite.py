@@ -335,7 +335,7 @@ class DirtySprite(Sprite):
 
     def __repr__(self):
         return "<%s DirtySprite(in %d groups)>" % \
-            (self.__class__.__name__, len(self.groups()))
+               (self.__class__.__name__, len(self.groups()))
 
 
 class AbstractGroup(object):
@@ -372,7 +372,8 @@ class AbstractGroup(object):
 
     def add_internal(self,
                      sprite,
-                     layer=None  # noqa pylint: disable=unused-argument; supporting legacy derived classes that override in non-pythonic way
+                     layer=None
+                     # noqa pylint: disable=unused-argument; supporting legacy derived classes that override in non-pythonic way
                      ):
         """
         For adding a sprite to this group internally.
@@ -410,7 +411,8 @@ class AbstractGroup(object):
         and has the same sprites in it.
 
         """
-        return self.__class__(self.sprites()) # noqa pylint: disable=too-many-function-args; needed because copy() won't work on AbstractGroup
+        return self.__class__(
+            self.sprites())  # noqa pylint: disable=too-many-function-args; needed because copy() won't work on AbstractGroup
 
     def __iter__(self):
         return iter(self.sprites())
@@ -626,6 +628,7 @@ class Group(AbstractGroup):
     iterated over in no particular order.
 
     """
+
     def __init__(self, *sprites):
         AbstractGroup.__init__(self)
         self.add(*sprites)
@@ -644,6 +647,7 @@ class RenderUpdates(Group):
     method that tracks the changed areas of the screen.
 
     """
+
     def draw(self, surface):
         surface_blit = surface.blit
         dirty = self.lostsprites
@@ -675,6 +679,7 @@ class OrderedUpdates(RenderUpdates):
     slower than regular Groups.
 
     """
+
     def __init__(self, *sprites):
         self._spritelist = []
         RenderUpdates.__init__(self, *sprites)
@@ -1075,7 +1080,7 @@ class LayeredDirty(LayeredUpdates):
         self._bgd = None
         for key, val in kwargs.items():
             if (key in ['_use_update', '_time_threshold', '_default_layer']
-                    and hasattr(self, key)):
+                and hasattr(self, key)):
                 setattr(self, key, val)
 
     def add_internal(self, sprite, layer=None):
@@ -1164,7 +1169,7 @@ class LayeredDirty(LayeredUpdates):
         # timing for switching modes
         # How may a good threshold be found? It depends on the hardware.
         end_time = get_ticks()
-        if end_time-start_time > self._time_threshold:
+        if end_time - start_time > self._time_threshold:
             self._use_update = False
         else:
             self._use_update = True

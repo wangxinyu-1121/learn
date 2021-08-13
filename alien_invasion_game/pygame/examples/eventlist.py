@@ -28,7 +28,6 @@ Keyboard Joystick Controls
 
 import pygame as pg
 
-
 img_on_off = []
 font = None
 last_key = None
@@ -125,7 +124,6 @@ def main():
 
     # stores surfaces of text representing what has gone through the event queue
     history = []
-
 
     # let's turn on the joysticks just so we can play with em
     for x in range(pg.joystick.get_count()):

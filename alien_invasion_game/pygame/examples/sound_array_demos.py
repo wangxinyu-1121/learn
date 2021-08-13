@@ -18,9 +18,10 @@ import pygame as pg
 from numpy import zeros, int32, int16
 import time
 
-
 # pg.mixer.init(44100, -16, 0)
 pg.mixer.init()
+
+
 # pg.mixer.init(11025, -16, 0)
 # pg.mixer.init(11025)
 
@@ -66,10 +67,10 @@ def make_echo(sound, samples_per_second, mydebug=True):
     incr = int(samples_per_second / echo_length)
     gap = length
 
-    myarr[incr : gap + incr] += a1 >> 1
-    myarr[incr * 2 : gap + (incr * 2)] += a1 >> 2
-    myarr[incr * 3 : gap + (incr * 3)] += a1 >> 3
-    myarr[incr * 4 : gap + (incr * 4)] += a1 >> 4
+    myarr[incr: gap + incr] += a1 >> 1
+    myarr[incr * 2: gap + (incr * 2)] += a1 >> 2
+    myarr[incr * 3: gap + (incr * 3)] += a1 >> 3
+    myarr[incr * 4: gap + (incr * 4)] += a1 >> 4
 
     if mydebug:
         print("SHAPE2: %s" % (myarr.shape,))

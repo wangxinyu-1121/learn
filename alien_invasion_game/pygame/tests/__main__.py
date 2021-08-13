@@ -90,7 +90,7 @@ opt_parser.add_option(
     "--python",
     metavar="PYTHON",
     help="path to python excutable to run subproccesed tests\n"
-    "default (sys.executable): %s" % sys.executable,
+         "default (sys.executable): %s" % sys.executable,
 )
 
 opt_parser.add_option(
@@ -137,7 +137,6 @@ if options.python:
 if options.interactive:
     kwds["interactive"] = True
 kwds["verbosity"] = options.verbosity if options.verbosity is not None else 1
-
 
 ###########################################################################
 # Run the test suite.

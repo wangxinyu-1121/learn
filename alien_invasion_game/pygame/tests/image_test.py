@@ -12,7 +12,6 @@ from pygame.tests.test_utils import example_path, png, tostring
 import pygame, pygame.image, pygame.pkgdata
 from pygame.compat import xrange_, ord_, unicode_
 
-
 try:
     import pathlib
 except ImportError:
@@ -89,9 +88,9 @@ class ImageModuleTest(unittest.TestCase):
         with open(f, "rb") as f:
             surf = pygame.image.load(f)
 
-        # with open(os.path.join("examples", "data", "alien1.jpg"), "rb") as f:
-        #     surf = pygame.image.load(open(os.path.join("examples", "data",
-        #         "alien1.jpg"), "rb"))
+            # with open(os.path.join("examples", "data", "alien1.jpg"), "rb") as f:
+            #     surf = pygame.image.load(open(os.path.join("examples", "data",
+            #         "alien1.jpg"), "rb"))
 
     def testSaveJPG(self):
         """ JPG equivalent to issue #211 - color channel swapping
@@ -315,12 +314,12 @@ class ImageModuleTest(unittest.TestCase):
         # We assume here that minor version and patch level of SDL_Image
         # never goes above 99
         isAtLeastSDL_image_2_0_2 = ((SDL_Im_version is not None) and
-                (SDL_Im_version[0] * 10000 +
-                 SDL_Im_version[1] * 100 +
-                 SDL_Im_version[2])
-                >= 20002)
+                                    (SDL_Im_version[0] * 10000 +
+                                     SDL_Im_version[1] * 100 +
+                                     SDL_Im_version[2])
+                                    >= 20002)
         for fmt in formats:
-            tmp_file, tmp_filename = tempfile.mkstemp(suffix=".%s"%fmt)
+            tmp_file, tmp_filename = tempfile.mkstemp(suffix=".%s" % fmt)
             if not isAtLeastSDL_image_2_0_2 and fmt.lower() == "jpg":
                 with os.fdopen(tmp_file, 'wb') as handle:
                     with self.assertRaises(pygame.error):
@@ -768,7 +767,7 @@ class ImageModuleTest(unittest.TestCase):
                          pygame.Color(50, 200, 20, 255))
 
     def test_get_extended(self):
-        #Create a png file and try to load it. If it cannot, get_extended() should return False
+        # Create a png file and try to load it. If it cannot, get_extended() should return False
         raw_image = []
         raw_image.append((200, 200, 200, 255, 100, 100, 100, 255))
 
@@ -813,7 +812,7 @@ class ImageModuleTest(unittest.TestCase):
 
         # test loading from a file
         s = pygame.image.load_basic(example_path("data/asprite.bmp"))
-        self.assertEqual(s.get_at((0,0)),(255,255,255,255))
+        self.assertEqual(s.get_at((0, 0)), (255, 255, 255, 255))
 
         # test loading from io.BufferedReader
         f = pygame.pkgdata.getResource("pygame_icon.bmp")
@@ -837,22 +836,22 @@ class ImageModuleTest(unittest.TestCase):
 
         filename_expected_color = [
             ("asprite.bmp", (255, 255, 255, 255)),
-             ("laplacian.png", (10, 10, 70, 255)),
-             ("red.jpg", (254, 0, 0, 255)),
-             ("blue.gif", (0, 0, 255, 255)),
-             ("green.pcx", (0, 255, 0, 255)),
-             ("yellow.tga", (255, 255, 0, 255)),
-             ("turquoise.tif", (0, 255, 255, 255)),
-             ("purple.xpm", (255, 0, 255, 255)),
-             ("black.ppm", (0, 0, 0, 255)),
-             ("grey.pgm", (120, 120, 120, 255))
+            ("laplacian.png", (10, 10, 70, 255)),
+            ("red.jpg", (254, 0, 0, 255)),
+            ("blue.gif", (0, 0, 255, 255)),
+            ("green.pcx", (0, 255, 0, 255)),
+            ("yellow.tga", (255, 255, 0, 255)),
+            ("turquoise.tif", (0, 255, 255, 255)),
+            ("purple.xpm", (255, 0, 255, 255)),
+            ("black.ppm", (0, 0, 0, 255)),
+            ("grey.pgm", (120, 120, 120, 255))
         ]
 
         for filename, expected_color in filename_expected_color:
             with self.subTest(
-                "Test loading a " + filename[-3:],
-                filename="examples/data/" + filename,
-                expected_color=expected_color
+                            "Test loading a " + filename[-3:],
+                    filename="examples/data/" + filename,
+                    expected_color=expected_color
             ):
                 surf = pygame.image.load_extended(example_path("data/" + filename))
                 self.assertEqual(surf.get_at((0, 0)), expected_color)
