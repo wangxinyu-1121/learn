@@ -15,6 +15,7 @@ class AlienInvasion:
         # 设置背景色
         self.background_color = (230, 230, 230)
 
+
     def run_game(self):
         """开始游戏的循环"""
         while True:
