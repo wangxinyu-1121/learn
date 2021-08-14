@@ -4,8 +4,8 @@ class Settings:
         """初始化游戏设置"""
 
         # 屏幕设置
-        self.screen_width = 1200
-        self.screen_height = 750
+        self.screen_width = 700
+        self.screen_height = 700
         self.background_color = (0, 191, 255)
 
         #飞船设置
@@ -20,3 +20,8 @@ class Settings:
         self.bullet_color = (60, 60, 60)
         # 允许当前存在的最大子弹数量
         self.bullets_allowed = 5
+
+        # 外星人设置
+        self.alien_width = 30
+        self.alien_height =30
+        self.alien_speed = 1
