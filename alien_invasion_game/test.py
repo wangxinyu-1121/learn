@@ -3,7 +3,7 @@
 import sys
 import pygame
 from pygame.locals import *
-from Settings import Settings
+from settings import Settings
 
 """初始化游戏并创建游戏资源"""
 pygame.init()

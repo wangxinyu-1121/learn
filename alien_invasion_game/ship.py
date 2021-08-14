@@ -1,5 +1,5 @@
 import pygame
-from Settings import Settings
+from settings import Settings
 
 
 class Ship:
