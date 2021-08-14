@@ -17,8 +17,8 @@ if is_pygame_pkg:
         TEST_RESULTS_START,
     )
 else:
-    from test.test_utils import import_submodule
-    from test.test_utils.test_runner import (
+    from test import import_submodule
+    from test import (
         prepare_test_env,
         run_test,
         combine_results,
@@ -236,7 +236,7 @@ def run(*args, **kwds):
         if is_pygame_pkg:
             from pygame.tests.test_utils.async_sub import proc_in_time_or_kill
         else:
-            from test.test_utils.async_sub import proc_in_time_or_kill
+            from test import proc_in_time_or_kill
 
         pass_on_args = ["--exclude", ",".join(option_exclude)]
         for field in ["randomize", "incomplete", "unbuffered", "verbosity"]:

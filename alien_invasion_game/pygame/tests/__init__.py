@@ -35,6 +35,6 @@ elif __name__ == "__main__":
     if is_pygame_pkg:
         import pygame.tests.__main__
     else:
-        import test.__main__
+        pass
 else:
-    from test.test_utils.run_tests import run
+    pass
