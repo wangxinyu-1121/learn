@@ -13,6 +13,7 @@ class Settings:
         self.ship_width = 30
         self.ship_height = 40
         self.ship_speed = 1.0
+        self.ship_limit = 3
 
         # 子弹设置
         self.bullet_width = 3
