@@ -88,9 +88,13 @@ class AlienInvasion:
             if bullet.rect.bottom <= 0:
                 self.bullets.remove(bullet)
                 # print(len(self.bullets))
+
+        self._check_bullet_alien_collisions()
+
+    def _check_bullet_alien_collisions(self):
+        """响应子弹和外星人碰撞"""
         # 检查子弹是否击中外星人，是则删除相应子弹和外星人
         collisions = pygame.sprite.groupcollide(self.bullets, self.aliens, True, True)
-
         # 生成新的外星人群
         if not self.aliens:
             # 删除现有所有子弹并新建外星人
@@ -107,7 +111,7 @@ class AlienInvasion:
         # 计算屏幕容纳多少行外星人
         ship_height = self.ship.rect.height
         available_space_y = (self.settings.screen_height - ship_height - (3 * alien_height))
-        number_rows = available_space_y // (2 * alien_height)
+        number_rows = available_space_y // (3 * alien_height)
         # 创建外星人群
         for row_number in range(number_rows):
             for alien_number in range(number_aliens_x):

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="732e9ba7-bb87-493d-a71a-45c574b560c0" name="Default" comment="add:移动外星人">
+    <list default="true" id="732e9ba7-bb87-493d-a71a-45c574b560c0" name="Default" comment="add:生成新外星群">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alien_invasion_game/Settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien_invasion_game/Settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alien_invasion_game/alien_invasion.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien_invasion_game/alien_invasion.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -184,7 +185,7 @@
       <workItem from="1629012172713" duration="156000" />
       <workItem from="1629012343435" duration="425000" />
       <workItem from="1629013009047" duration="770000" />
-      <workItem from="1629014073290" duration="5065000" />
+      <workItem from="1629014073290" duration="5649000" />
     </task>
     <task id="LOCAL-00001" summary="新增《外星人入侵》游戏pygame框架">
       <created>1628788055741</created>
@@ -221,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629021704078</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add:生成新外星群">
+      <created>1629022317316</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1629022317316</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -270,10 +278,11 @@
     <MESSAGE value="fix:修改readme" />
     <MESSAGE value="add:创建外星人群" />
     <MESSAGE value="add:移动外星人" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:移动外星人" />
+    <MESSAGE value="add:生成新外星群" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:生成新外星群" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/learn$alien_invasion.coverage" NAME="alien_invasion Coverage Results" MODIFIED="1629021990036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alien_invasion_game" />
+    <SUITE FILE_PATH="coverage/learn$alien_invasion.coverage" NAME="alien_invasion Coverage Results" MODIFIED="1629022811225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alien_invasion_game" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/alien_invasion_game/.idea/dictionaries/17787.xml">
