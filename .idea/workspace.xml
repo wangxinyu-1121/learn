@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="732e9ba7-bb87-493d-a71a-45c574b560c0" name="Default" comment="add:重构碰撞函数">
-      <change afterPath="$PROJECT_DIR$/alien_invasion_game/game_stats.py" afterDir="false" />
+    <list default="true" id="732e9ba7-bb87-493d-a71a-45c574b560c0" name="Default" comment="add:判定游戏结束">
+      <change afterPath="$PROJECT_DIR$/alien_invasion_game/button.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alien_invasion_game/Settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien_invasion_game/Settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alien_invasion_game/alien_invasion.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien_invasion_game/alien_invasion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alien_invasion_game/ship.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien_invasion_game/ship.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alien_invasion_game/game_stats.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien_invasion_game/game_stats.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +32,14 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/alien_invasion_game/settings.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/alien_invasion_game/ship.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/alien_invasion_game/alien_invasion.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/alien_invasion_game/alien.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/alien_invasion_game/game_stats.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/alien_invasion_game/button.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/README.md" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/alien_invasion_game/bullet.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -187,7 +193,7 @@
       <workItem from="1629012172713" duration="156000" />
       <workItem from="1629012343435" duration="425000" />
       <workItem from="1629013009047" duration="770000" />
-      <workItem from="1629014073290" duration="8659000" />
+      <workItem from="1629014073290" duration="12622000" />
     </task>
     <task id="LOCAL-00001" summary="新增《外星人入侵》游戏pygame框架">
       <created>1628788055741</created>
@@ -238,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629022919200</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add:判定游戏结束">
+      <created>1629027010841</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1629027010841</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -289,10 +302,11 @@
     <MESSAGE value="add:移动外星人" />
     <MESSAGE value="add:生成新外星群" />
     <MESSAGE value="add:重构碰撞函数" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:重构碰撞函数" />
+    <MESSAGE value="add:判定游戏结束" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:判定游戏结束" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/learn$alien_invasion.coverage" NAME="alien_invasion Coverage Results" MODIFIED="1629026785102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alien_invasion_game" />
+    <SUITE FILE_PATH="coverage/learn$alien_invasion.coverage" NAME="alien_invasion Coverage Results" MODIFIED="1629033061406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alien_invasion_game" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/alien_invasion_game/.idea/dictionaries/17787.xml">
