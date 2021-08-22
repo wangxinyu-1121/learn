@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="732e9ba7-bb87-493d-a71a-45c574b560c0" name="Default" comment="add:重置游戏速度">
+      <change afterPath="$PROJECT_DIR$/alien_invasion_game/scoreboard.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alien_invasion_game/Settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien_invasion_game/Settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alien_invasion_game/alien_invasion.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien_invasion_game/alien_invasion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alien_invasion_game/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien_invasion_game/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alien_invasion_game/game_stats.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien_invasion_game/game_stats.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +195,7 @@
       <workItem from="1629012343435" duration="425000" />
       <workItem from="1629013009047" duration="770000" />
       <workItem from="1629014073290" duration="14741000" />
-      <workItem from="1629526049983" duration="2394000" />
+      <workItem from="1629526049983" duration="5687000" />
     </task>
     <task id="LOCAL-00001" summary="新增《外星人入侵》游戏pygame框架">
       <created>1628788055741</created>
@@ -258,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629044673864</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add:重置游戏速度">
+      <created>1629608459202</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1629608459203</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -316,7 +325,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="add:重置游戏速度" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/learn$alien_invasion.coverage" NAME="alien_invasion Coverage Results" MODIFIED="1629044688373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alien_invasion_game" />
+    <SUITE FILE_PATH="coverage/learn$alien_invasion.coverage" NAME="alien_invasion Coverage Results" MODIFIED="1629611023698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alien_invasion_game" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/alien_invasion_game/.idea/dictionaries/17787.xml">
