@@ -1,12 +1,14 @@
 import pygame
 from settings import Settings
+from pygame.sprite import Sprite
 
 
-class Ship:
+class Ship(Sprite):
     """管理飞船类"""
 
     def __init__(self, ai_game):
         """初始化飞船并设置其初始位置"""
+        super().__init__()
         self.screen = ai_game.screen
         self.settings = Settings()
         # 获取屏幕外接矩形

@@ -1,4 +1,6 @@
 import pygame.font
+from pygame.sprite import Group
+from ship import Ship
 
 
 class Scoreboard:
@@ -6,6 +8,7 @@ class Scoreboard:
 
     def __init__(self, ai_game):
         """初始化显示得分涉及的属性"""
+        self.ai_game = ai_game
         self.screen = ai_game.screen
         self.screen_rect = self.screen.get_rect()
         self.settings = ai_game.settings
@@ -16,15 +19,35 @@ class Scoreboard:
         self.font = pygame.font.SysFont(None, 48)
         # 准备初始得分图像
         self.prep_score()
+        self.prep_level()
+        self.prep_ships()
 
         # 准备包含最高分和当前得分的图像
         self.prep_high_score()
+
+    def prep_ships(self):
+        """显示还剩下多少飞船"""
+        self.ships = Group()
+        for ship_number in range(self.stats.ships_left):
+            ship = Ship(self.ai_game)
+            self.rect.x = 10 + ship_number * ship.rect.width
+            self.rect.y = self.screen_rect.top
+            self.ships.add(ship)
+
+    def prep_level(self):
+        """将等级转换为渲染的图像"""
+        level_str = str(self.stats.level)
+        self.level_image = self.font.render(level_str, True, self.text_color, self.settings.background_color)
+
+        # 将等级显示在得分下方
+        self.level_rect = self.level_image.get_rect()
+        self.level_rect.right = self.score_rect.right
+        self.level_rect.top = self.score_rect.bottom + 10
 
     def prep_score(self):
         """将得分转换成一幅渲染的图像"""
         rounded_score = round(self.stats.score, -1)
         score_str = "{:,}".format(rounded_score)
-        score_str = str(self.stats.score)
         self.score_image = self.font.render(score_str, True, self.text_color, self.settings.background_color)
 
         # 在右上角展示得分
@@ -47,6 +70,10 @@ class Scoreboard:
         """在屏幕上显示得分"""
         self.screen.blit(self.score_image, self.score_rect)
         self.screen.blit(self.high_score_image, self.high_score_rect)
+        # 在屏幕上显示等级
+        self.screen.blit(self.level_image, self.level_rect)
+        # 显示剩下飞船数
+        self.ships.draw(self.screen)
 
     def check_high_score(self):
         """检查最高分"""
