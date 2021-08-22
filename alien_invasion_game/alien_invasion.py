@@ -134,10 +134,11 @@ class AlienInvasion:
         collisions = pygame.sprite.groupcollide(self.bullets, self.aliens, True, True)
         # 生成新的外星人群
         if collisions:
-            # 记分
+            # 记分,并记录最高分
             for aliens in collisions.values():
                 self.stats.score += self.settings.alien_points * len(aliens)
                 self.sb.prep_score()
+                self.sb.check_high_score()
         if not self.aliens:
             # 删除现有所有子弹并新建外星人
             self.bullets.empty()
