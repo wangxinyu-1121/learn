@@ -202,15 +202,15 @@ class Exporter(pygame.newbuffer.BufferMixin):
         if (flags & PyBUF_WRITABLE) == PyBUF_WRITABLE and self.readonly:
             raise BufferError("buffer is read-only")
         if (
-                    flags & PyBUF_C_CONTIGUOUS
+                flags & PyBUF_C_CONTIGUOUS
         ) == PyBUF_C_CONTIGUOUS and not self.is_contiguous("C"):
             raise BufferError("data is not C contiguous")
         if (
-                    flags & PyBUF_F_CONTIGUOUS
+                flags & PyBUF_F_CONTIGUOUS
         ) == PyBUF_F_CONTIGUOUS and not self.is_contiguous("F"):
             raise BufferError("data is not F contiguous")
         if (
-                    flags & PyBUF_ANY_CONTIGUOUS
+                flags & PyBUF_ANY_CONTIGUOUS
         ) == PyBUF_ANY_CONTIGUOUS and not self.is_contiguous("A"):
             raise BufferError("data is not contiguous")
         view.buf = self.buf

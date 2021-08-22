@@ -54,7 +54,7 @@ def main(imagefile, convert_alpha=False, run_speed_test=False):
         pg.display.flip()
         for event in pg.event.get():
             if event.type == pg.QUIT or (
-                            event.type == pg.KEYDOWN and event.key == pg.K_ESCAPE
+                    event.type == pg.KEYDOWN and event.key == pg.K_ESCAPE
             ):
                 bRunning = False
             if event.type == pg.KEYDOWN:

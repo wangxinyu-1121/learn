@@ -85,8 +85,8 @@ while running:
             running = False
         elif getattr(event, "window", None) == win2:
             if (
-                                event.type == pg.KEYDOWN
-                        and event.key == pg.K_ESCAPE
+                    event.type == pg.KEYDOWN
+                    and event.key == pg.K_ESCAPE
                     or event.type == pg.WINDOWCLOSE
             ):
                 win2.destroy()

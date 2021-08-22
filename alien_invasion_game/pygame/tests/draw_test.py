@@ -615,7 +615,7 @@ class DrawEllipseMixin(object):
                 drawn_pixel = False
                 for x in range(width + 1):
                     if not drawn_pixel and surface.get_at((x, y)) == pygame.Color('RED') or \
-                                    drawn_pixel and surface.get_at((x, y)) == pygame.Color('BLACK'):
+                            drawn_pixel and surface.get_at((x, y)) == pygame.Color('BLACK'):
                         drawn_pixel = not drawn_pixel
                         number_of_changes += 1
                 if y < thickness or y > height - thickness - 1:
@@ -5744,7 +5744,7 @@ class DrawCircleMixin(object):
             if (radius - width + 1) ** 2 < sqr_distance < (radius - 1) ** 2:
                 self.assertEqual(surface.get_at(pt), circle_color)
             if (
-                            sqr_distance < (radius - width - 1) ** 2
+                    sqr_distance < (radius - width - 1) ** 2
                     or sqr_distance > (radius + 1) ** 2
             ):
                 self.assertEqual(surface.get_at(pt), surface_color)

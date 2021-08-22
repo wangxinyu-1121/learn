@@ -474,9 +474,9 @@ class Writer:
                     raise ValueError("%s colour for greyscale must be integer" % which)
             else:
                 if not (
-                                        len(c) == 3
-                                and isinteger(c[0])
-                            and isinteger(c[1])
+                        len(c) == 3
+                        and isinteger(c[0])
+                        and isinteger(c[1])
                         and isinteger(c[2])
                 ):
                     raise ValueError("%s colour must be a triple of integers" % which)
@@ -1778,7 +1778,7 @@ class Reader:
             # per pixel; check only indexed or greyscale images have
             # fewer than 8 bits per pixel.
             if (self.color_type & 1 and self.bitdepth > 8) or (
-                            self.bitdepth < 8 and self.color_type not in (0, 3)
+                    self.bitdepth < 8 and self.color_type not in (0, 3)
             ):
                 raise FormatError(
                     "Illegal combination of bit depth (%d)"
@@ -1875,8 +1875,8 @@ class Reader:
         elif type == "sBIT":
             self.sbit = data
             if (
-                            self.colormap
-                        and len(data) != 3
+                    self.colormap
+                    and len(data) != 3
                     or not self.colormap
                     and len(data) != self.planes
             ):

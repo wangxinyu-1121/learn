@@ -3409,9 +3409,9 @@ class SurfaceBlendTest(unittest.TestCase):
                         dst,
                         p,
                         (
-                            ", op: %s, src bpp: %i"
-                            ", src flags: %i"
-                            % (blend_name, src.get_bitsize(), src.get_flags())
+                                ", op: %s, src bpp: %i"
+                                ", src flags: %i"
+                                % (blend_name, src.get_bitsize(), src.get_flags())
                         ),
                     )
 
@@ -3496,9 +3496,9 @@ class SurfaceBlendTest(unittest.TestCase):
                         dst,
                         p,
                         (
-                            ", op: %s, src bpp: %i"
-                            ", src flags: %i"
-                            % (blend_name, src.get_bitsize(), src.get_flags())
+                                ", op: %s, src bpp: %i"
+                                ", src flags: %i"
+                                % (blend_name, src.get_bitsize(), src.get_flags())
                         ),
                     )
 
@@ -3970,8 +3970,8 @@ class SurfaceSelfBlitTest(unittest.TestCase):
                     a.get_at((x, y)),
                     b.get_at((x, y)),
                     (
-                        "%s != %s, bpp: %i"
-                        % (a.get_at((x, y)), b.get_at((x, y)), a.get_bitsize())
+                            "%s != %s, bpp: %i"
+                            % (a.get_at((x, y)), b.get_at((x, y)), a.get_bitsize())
                     ),
                 )
 

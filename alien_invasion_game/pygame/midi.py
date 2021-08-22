@@ -682,7 +682,7 @@ def frequency_to_midi(frequency):
     return int(
         round(
             69 + (
-                12 * math.log(frequency / 440.0)
+                    12 * math.log(frequency / 440.0)
             ) / math.log(2)
         )
     )

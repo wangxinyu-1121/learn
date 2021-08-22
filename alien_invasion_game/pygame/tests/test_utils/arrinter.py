@@ -144,22 +144,22 @@ class ArrayInterface(object):
         else:
             ver = "N/A"
         return (
-            "nd: %i\n"
-            "typekind: %s\n"
-            "itemsize: %i\n"
-            "flags: %s\n"
-            "shape: %s\n"
-            "strides: %s\n"
-            "ver: %s\n"
-            % (
-                self.nd,
-                self.typekind,
-                self.itemsize,
-                format_flags(self.flags),
-                format_shape(self.nd, self.shape),
-                format_strides(self.nd, self.strides),
-                ver,
-            )
+                "nd: %i\n"
+                "typekind: %s\n"
+                "itemsize: %i\n"
+                "flags: %s\n"
+                "shape: %s\n"
+                "strides: %s\n"
+                "ver: %s\n"
+                % (
+                    self.nd,
+                    self.typekind,
+                    self.itemsize,
+                    format_flags(self.flags),
+                    format_shape(self.nd, self.shape),
+                    format_strides(self.nd, self.strides),
+                    ver,
+                )
         )
 
 

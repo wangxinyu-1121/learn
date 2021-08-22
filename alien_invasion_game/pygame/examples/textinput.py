@@ -94,7 +94,7 @@ def main():
                 if event.key == pg.K_BACKSPACE:
                     if len(_IMEText) > 0 and _IMETextPos > 0:
                         _IMEText = (
-                            _IMEText[0: _IMETextPos - 1] + _IMEText[_IMETextPos:]
+                                _IMEText[0: _IMETextPos - 1] + _IMEText[_IMETextPos:]
                         )
                         _IMETextPos = max(0, _IMETextPos - 1)
 
@@ -106,7 +106,7 @@ def main():
                     _IMETextPos = min(len(_IMEText), _IMETextPos + 1)
 
                 elif (
-                                event.key in [pg.K_RETURN, pg.K_KP_ENTER]
+                        event.key in [pg.K_RETURN, pg.K_KP_ENTER]
                         and len(event.unicode) == 0
                 ):
                     # Block if we have no text to append
@@ -152,7 +152,7 @@ def main():
         start_pos = CHATBOX_POS.copy()
         ime_textL = ">" + _IMEText[0:_IMETextPos]
         ime_textM = (
-            _IMEEditingText[0:_IMEEditingPos] + "|" + _IMEEditingText[_IMEEditingPos:]
+                _IMEEditingText[0:_IMEEditingPos] + "|" + _IMEEditingText[_IMEEditingPos:]
         )
         ime_textR = _IMEText[_IMETextPos:]
 

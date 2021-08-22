@@ -411,15 +411,15 @@ class ImageModuleTest(unittest.TestCase):
                 if block1 != block2:
                     source_block = source_string[block_start:block_end]
                     msg = (
-                        "string difference in %d to %d of %d:\n%s\n%s\nsource:\n%s"
-                        % (
-                            block_start,
-                            block_end,
-                            len(string1),
-                            binascii.hexlify(block1),
-                            binascii.hexlify(block2),
-                            binascii.hexlify(source_block),
-                        )
+                            "string difference in %d to %d of %d:\n%s\n%s\nsource:\n%s"
+                            % (
+                                block_start,
+                                block_end,
+                                len(string1),
+                                binascii.hexlify(block1),
+                                binascii.hexlify(block2),
+                                binascii.hexlify(source_block),
+                            )
                     )
                     self.fail(msg)
 
@@ -809,7 +809,6 @@ class ImageModuleTest(unittest.TestCase):
 
         # pygame.image.load(filename): return Surface
 
-
         # test loading from a file
         s = pygame.image.load_basic(example_path("data/asprite.bmp"))
         self.assertEqual(s.get_at((0, 0)), (255, 255, 255, 255))
@@ -849,7 +848,7 @@ class ImageModuleTest(unittest.TestCase):
 
         for filename, expected_color in filename_expected_color:
             with self.subTest(
-                            "Test loading a " + filename[-3:],
+                    "Test loading a " + filename[-3:],
                     filename="examples/data/" + filename,
                     expected_color=expected_color
             ):

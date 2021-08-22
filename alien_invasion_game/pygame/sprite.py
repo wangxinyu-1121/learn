@@ -1080,7 +1080,7 @@ class LayeredDirty(LayeredUpdates):
         self._bgd = None
         for key, val in kwargs.items():
             if (key in ['_use_update', '_time_threshold', '_default_layer']
-                and hasattr(self, key)):
+                    and hasattr(self, key)):
                 setattr(self, key, val)
 
     def add_internal(self, sprite, layer=None):

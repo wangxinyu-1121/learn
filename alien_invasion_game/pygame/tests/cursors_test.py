@@ -88,7 +88,6 @@ class CursorsModuleTest(unittest.TestCase):
         finally:
             pygame.display.quit()
 
-
         ################################################################################
 
     def test_load_xbm(self):

@@ -236,9 +236,9 @@ class SurfarrayModuleTest(unittest.TestCase):
                         arr[x, y],
                         p[i][3],
                         (
-                            "%i != %i, posn: (%i, %i), "
-                            "bitsize: %i"
-                            % (arr[x, y], p[i][3], x, y, surf.get_bitsize())
+                                "%i != %i, posn: (%i, %i), "
+                                "bitsize: %i"
+                                % (arr[x, y], p[i][3], x, y, surf.get_bitsize())
                         ),
                     )
             else:
@@ -310,9 +310,9 @@ class SurfarrayModuleTest(unittest.TestCase):
                         arr[x, y],
                         alphas[j],
                         (
-                            "%i != %i, posn: (%i, %i), "
-                            "bitsize: %i"
-                            % (arr[x, y], alphas[j], x, y, surf.get_bitsize())
+                                "%i != %i, posn: (%i, %i), "
+                                "bitsize: %i"
+                                % (arr[x, y], alphas[j], x, y, surf.get_bitsize())
                         ),
                     )
 

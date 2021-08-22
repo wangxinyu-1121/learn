@@ -551,7 +551,7 @@ def main():
         events = pg.event.get()
         for event in events:
             if event.type == pg.QUIT or (
-                            event.type == pg.KEYDOWN and event.key == pg.K_ESCAPE
+                    event.type == pg.KEYDOWN and event.key == pg.K_ESCAPE
             ):
                 going = False
 
