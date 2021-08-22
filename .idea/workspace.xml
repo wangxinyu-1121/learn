@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="732e9ba7-bb87-493d-a71a-45c574b560c0" name="Default" comment="add:记命">
+    <list default="true" id="732e9ba7-bb87-493d-a71a-45c574b560c0" name="Default" comment="fixed；格式化">
+      <change afterPath="$PROJECT_DIR$/data_visualization/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_visualization/mpl_aquares.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alien_invasion_game/alien_invasion.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien_invasion_game/alien_invasion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alien_invasion_game/game_stats.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien_invasion_game/game_stats.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alien_invasion_game/scoreboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien_invasion_game/scoreboard.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +132,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -142,7 +141,7 @@
       </console-settings>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.mpl_aquares (1)">
     <configuration name="alien_invasion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="learn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -165,8 +164,54 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="mpl_aquares (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="learn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_visualization" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_visualization/mpl_aquares.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mpl_aquares" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="learn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/数据可视化" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/数据可视化/mpl_aquares.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mpl_aquares (1)" />
+        <item itemvalue="Python.mpl_aquares" />
         <item itemvalue="Python.alien_invasion" />
       </list>
     </recent_temporary>
@@ -194,7 +239,7 @@
       <workItem from="1629012343435" duration="425000" />
       <workItem from="1629013009047" duration="770000" />
       <workItem from="1629014073290" duration="14741000" />
-      <workItem from="1629526049983" duration="9498000" />
+      <workItem from="1629526049983" duration="14041000" />
     </task>
     <task id="LOCAL-00001" summary="新增《外星人入侵》游戏pygame框架">
       <created>1628788055741</created>
@@ -287,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629614149720</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fixed；格式化">
+      <created>1629615649390</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1629615649390</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -345,9 +397,12 @@
     <MESSAGE value="add:计分板" />
     <MESSAGE value="add:记录最高分" />
     <MESSAGE value="add:记命" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:记命" />
+    <MESSAGE value="fixed；格式化" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed；格式化" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/learn$mpl_aquares__1_.coverage" NAME="mpl_aquares (1) Coverage Results" MODIFIED="1629649047676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
+    <SUITE FILE_PATH="coverage/learn$mpl_aquares.coverage" NAME="mpl_aquares Coverage Results" MODIFIED="1629647782273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/数据可视化" />
     <SUITE FILE_PATH="coverage/learn$alien_invasion.coverage" NAME="alien_invasion Coverage Results" MODIFIED="1629615512370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alien_invasion_game" />
   </component>
   <component name="editorHistoryManager">
