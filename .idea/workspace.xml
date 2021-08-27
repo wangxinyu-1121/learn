@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="732e9ba7-bb87-493d-a71a-45c574b560c0" name="Default" comment="fixed；格式化">
-      <change afterPath="$PROJECT_DIR$/data_visualization/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_visualization/mpl_aquares.py" afterDir="false" />
+    <list default="true" id="732e9ba7-bb87-493d-a71a-45c574b560c0" name="Default" comment="add:数据可视化">
+      <change afterPath="$PROJECT_DIR$/data_visualization/random_walk.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_visualization/rw_visual.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_visualization/mpl_aquares.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_visualization/mpl_aquares.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,6 +128,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -141,7 +143,7 @@
       </console-settings>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mpl_aquares (1)">
+  <component name="RunManager" selected="Python.rw_visual">
     <configuration name="alien_invasion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="learn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -208,8 +210,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="rw_visual" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="learn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_visualization" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_visualization/rw_visual.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.rw_visual" />
         <item itemvalue="Python.mpl_aquares (1)" />
         <item itemvalue="Python.mpl_aquares" />
         <item itemvalue="Python.alien_invasion" />
@@ -239,7 +264,7 @@
       <workItem from="1629012343435" duration="425000" />
       <workItem from="1629013009047" duration="770000" />
       <workItem from="1629014073290" duration="14741000" />
-      <workItem from="1629526049983" duration="14041000" />
+      <workItem from="1629526049983" duration="17799000" />
     </task>
     <task id="LOCAL-00001" summary="新增《外星人入侵》游戏pygame框架">
       <created>1628788055741</created>
@@ -339,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629615649390</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="add:数据可视化">
+      <created>1629649113459</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1629649113459</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -385,6 +417,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="新增《外星人入侵》游戏pygame框架" />
     <MESSAGE value="fix:修改readme" />
     <MESSAGE value="add:创建外星人群" />
@@ -398,10 +431,12 @@
     <MESSAGE value="add:记录最高分" />
     <MESSAGE value="add:记命" />
     <MESSAGE value="fixed；格式化" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed；格式化" />
+    <MESSAGE value="add:数据可视化" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:数据可视化" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/learn$mpl_aquares__1_.coverage" NAME="mpl_aquares (1) Coverage Results" MODIFIED="1629649047676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
+    <SUITE FILE_PATH="coverage/learn$rw_visual.coverage" NAME="rw_visual Coverage Results" MODIFIED="1630072800795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
+    <SUITE FILE_PATH="coverage/learn$mpl_aquares__1_.coverage" NAME="mpl_aquares (1) Coverage Results" MODIFIED="1630072786168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
     <SUITE FILE_PATH="coverage/learn$mpl_aquares.coverage" NAME="mpl_aquares Coverage Results" MODIFIED="1629647782273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/数据可视化" />
     <SUITE FILE_PATH="coverage/learn$alien_invasion.coverage" NAME="alien_invasion Coverage Results" MODIFIED="1629615512370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alien_invasion_game" />
   </component>
