@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="732e9ba7-bb87-493d-a71a-45c574b560c0" name="Default" comment="add:随机漫步">
+      <change afterPath="$PROJECT_DIR$/data_visualization/die_visual.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_visualization/rw_visual.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_visualization/rw_visual.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_visualization/die.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_visualization/die.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +35,7 @@
     <setting file="file://$PROJECT_DIR$/alien_invasion_game/ship.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/alien_invasion_game/alien_invasion.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/alien_invasion_game/alien.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/data_visualization/die_visual.py" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/alien_invasion_game/game_stats.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/alien_invasion_game/button.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/README.md" root0="FORCE_HIGHLIGHTING" />
@@ -262,7 +264,7 @@
       <workItem from="1629012343435" duration="425000" />
       <workItem from="1629013009047" duration="770000" />
       <workItem from="1629014073290" duration="14741000" />
-      <workItem from="1629526049983" duration="21459000" />
+      <workItem from="1629526049983" duration="22161000" />
     </task>
     <task id="LOCAL-00001" summary="新增《外星人入侵》游戏pygame框架">
       <created>1628788055741</created>
@@ -376,7 +378,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630072917368</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add:随机漫步">
+      <created>1630146106617</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1630146106617</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
