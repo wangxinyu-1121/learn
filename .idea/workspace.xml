@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="732e9ba7-bb87-493d-a71a-45c574b560c0" name="Default" comment="fixed：绘制温度曲线（给中间去着色）">
-      <change afterPath="$PROJECT_DIR$/data_visualization/death_valley_2018_simple.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_visualization/death_valley_highs_lows.py" afterDir="false" />
+    <list default="true" id="732e9ba7-bb87-493d-a71a-45c574b560c0" name="Default" comment="add:错误检查">
+      <change afterPath="$PROJECT_DIR$/data_visualization/eq_data_1_day_m1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_visualization/eq_explore_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_visualization/eq_world_map.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_visualization/readable_eq_data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,7 +150,7 @@
       <recent name="D:\learn\peixun\Python\learn\data_visualization" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.death_valley_highs_lows">
+  <component name="RunManager" selected="Python.eq_explore_data">
     <configuration name="death_valley_highs_lows" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="learn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -193,7 +195,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mpl_aquares (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="eq_explore_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="learn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -206,7 +208,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_visualization/mpl_aquares.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_visualization/eq_explore_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -261,11 +263,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.eq_explore_data" />
         <item itemvalue="Python.death_valley_highs_lows" />
         <item itemvalue="Python.sitka_highs_lows" />
         <item itemvalue="Python.die_visual" />
         <item itemvalue="Python.rw_visual" />
-        <item itemvalue="Python.mpl_aquares (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -293,7 +295,7 @@
       <workItem from="1629013009047" duration="770000" />
       <workItem from="1629014073290" duration="14741000" />
       <workItem from="1629526049983" duration="22197000" />
-      <workItem from="1630146793602" duration="7796000" />
+      <workItem from="1630146793602" duration="9165000" />
     </task>
     <task id="LOCAL-00001" summary="新增《外星人入侵》游戏pygame框架">
       <created>1628788055741</created>
@@ -463,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630219981510</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="add:错误检查">
+      <created>1630220824799</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1630220824799</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -532,9 +541,11 @@
     <MESSAGE value="fixed：名字" />
     <MESSAGE value="fixed：下载数据csv（绘制温度曲线）" />
     <MESSAGE value="fixed：绘制温度曲线（给中间去着色）" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed：绘制温度曲线（给中间去着色）" />
+    <MESSAGE value="add:错误检查" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:错误检查" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/learn$eq_explore_data.coverage" NAME="eq_explore_data Coverage Results" MODIFIED="1630221659762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
     <SUITE FILE_PATH="coverage/learn$rw_visual.coverage" NAME="rw_visual Coverage Results" MODIFIED="1630147167731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
     <SUITE FILE_PATH="coverage/learn$mpl_aquares__1_.coverage" NAME="mpl_aquares (1) Coverage Results" MODIFIED="1630072786168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
     <SUITE FILE_PATH="coverage/learn$die_visual.coverage" NAME="die_visual Coverage Results" MODIFIED="1630148752133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
