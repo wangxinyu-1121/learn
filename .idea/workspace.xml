@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="732e9ba7-bb87-493d-a71a-45c574b560c0" name="Default" comment="add:绘制地震级散点图">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_visualization/eq_explore_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_visualization/eq_explore_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_visualization/eq_world_map.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_visualization/global_earthquakes.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,7 +291,7 @@
       <workItem from="1629013009047" duration="770000" />
       <workItem from="1629014073290" duration="14741000" />
       <workItem from="1629526049983" duration="22197000" />
-      <workItem from="1630146793602" duration="10457000" />
+      <workItem from="1630146793602" duration="10770000" />
     </task>
     <task id="LOCAL-00001" summary="新增《外星人入侵》游戏pygame框架">
       <created>1628788055741</created>
@@ -477,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630222212258</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="add:绘制地震级散点图">
+      <created>1630223965085</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1630223965085</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -552,7 +557,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/learn$eq_world_map.coverage" NAME="eq_world_map Coverage Results" MODIFIED="1630222243345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
-    <SUITE FILE_PATH="coverage/learn$eq_explore_data.coverage" NAME="eq_explore_data Coverage Results" MODIFIED="1630223737427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
+    <SUITE FILE_PATH="coverage/learn$eq_explore_data.coverage" NAME="eq_explore_data Coverage Results" MODIFIED="1630223841179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
     <SUITE FILE_PATH="coverage/learn$rw_visual.coverage" NAME="rw_visual Coverage Results" MODIFIED="1630147167731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
     <SUITE FILE_PATH="coverage/learn$mpl_aquares__1_.coverage" NAME="mpl_aquares (1) Coverage Results" MODIFIED="1630072786168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
     <SUITE FILE_PATH="coverage/learn$die_visual.coverage" NAME="die_visual Coverage Results" MODIFIED="1630148752133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
