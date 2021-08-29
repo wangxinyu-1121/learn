@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="732e9ba7-bb87-493d-a71a-45c574b560c0" name="Default" comment="add:web应用程序-从django入手，定义模型">
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/migrations/0002_entry.py" afterDir="false" />
+    <list default="true" id="732e9ba7-bb87-493d-a71a-45c574b560c0" name="Default" comment="add:web应用程序-从django入手，注册entry模型">
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_application/learning_log/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_logs/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_logs/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_log/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_log/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -521,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630229165859</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="add:web应用程序-从django入手，注册entry模型">
+      <created>1630250728893</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1630250728893</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -568,7 +573,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add:创建外星人群" />
     <MESSAGE value="add:移动外星人" />
     <MESSAGE value="add:生成新外星群" />
     <MESSAGE value="add:重构碰撞函数" />
@@ -593,7 +597,8 @@
     <MESSAGE value="add:可视化结果（api）" />
     <MESSAGE value="add:添加自定义工具提示（api）" />
     <MESSAGE value="add:图表中添加可点击链接（api）" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:图表中添加可点击链接（api）" />
+    <MESSAGE value="add:web应用程序-从django入手，注册entry模型" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:web应用程序-从django入手，注册entry模型" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/learn$eq_world_map.coverage" NAME="eq_world_map Coverage Results" MODIFIED="1630222243345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
