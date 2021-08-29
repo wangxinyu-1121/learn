@@ -26,11 +26,13 @@ with open(file_name) as file:
 
     print(highs)
 
-# 绘制温度曲线
+# 绘制温度曲线,alpha代表透明度
 plt.style.use('seaborn')
 fig, ax = plt.subplots()
-ax.plot(dates, highs, c='red')
-ax.plot(dates, lows, c='blue')
+ax.plot(dates, highs, c='red', alpha=0.5)
+ax.plot(dates, lows, c='blue', alpha=0.5)
+ax.fill_between(dates, highs, lows, facecolor='blue', alpha=0.1)
+
 
 # 设置图形格式
 ax.set_title('2018,day_max_temp', fontsize=24)
