@@ -1,4 +1,5 @@
 import json
+import plotly.express as px
 
 # 探索数据结构
 filename = 'eq_data_1_day_m1.json'
@@ -30,6 +31,15 @@ for eq_dict in all_eq_dicts:
 # print(lats[:5])
 
 
-
-
-
+fig = px.scatter(
+    x=lons,
+    y=lats,
+    labels={'x': '精度', 'y': '纬度'},
+    range_x=[-200, 200],
+    range_y=[-90, 90],
+    width=800,
+    height=800,
+    title='全球地震散点图',
+)
+fig.write_html('global_earthquakes.html')
+fig.show()
