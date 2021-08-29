@@ -12,9 +12,13 @@ print(f'状态码：{resp.status_code}')
 # 处理结果
 resp_dict = resp.json()
 repo_dicts = resp_dict['items']
-repo_names, stars, labels = [], [], []
+repo_links, stars, labels = [], [], []
 for repo_dict in repo_dicts:
-    repo_names.append(repo_dict['name'])
+    # repo_names.append(repo_dict['name'])
+    repo_name = repo_dict['name']
+    repo_url = repo_dict['html_url']
+    repo_link = f"<a href='{repo_url}'>{repo_name}</a>"
+    repo_links.append(repo_link)
     stars.append(repo_dict['stargazers_count'])
 
     owner = repo_dict['owner']['login']
@@ -25,7 +29,7 @@ for repo_dict in repo_dicts:
 # 可视化
 data = [{
     'type': 'bar',
-    'x': repo_names,
+    'x': repo_links,
     'y': stars,
     'hovertext': labels,
     'marker': {
