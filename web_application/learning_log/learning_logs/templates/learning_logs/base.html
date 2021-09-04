@@ -6,7 +6,8 @@
 </head>
 <body>
     <p>
-      <a href="{% url 'learning_logs:index' %}">Learning Log</a>
+      <a href="{% url 'learning_logs:index' %}">学习笔记（learning log）</a> -
+      <a href="{% url 'learning_logs:topics' %}">主题（topics）</a>
     </p>
     {% block content %}{% endblock content %}
 </body>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主题详情</title>
+</head>
+<body>
+    {% extends "learning_logs/base.html" %}
+    {% block content %}
+    <p>主题（Topics）：{{ topic }}</p>
+    <p>条目（Entries）：</p>
+    <ul>
+        {% for entry in entries %}
+            <li>
+                <p>{{ entry.date_added|date:'M d, Y H:i' }}</p>
+                <p>{{ entry.text|linebreaks }}</p>
+            </li>
+        {% empty %}
+            <li>还没有条目被添加</li>
+        {% endfor %}
+    </ul>
+    {% endblock content %}
+</body>
+</html>

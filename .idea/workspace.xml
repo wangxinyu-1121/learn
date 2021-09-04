@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="732e9ba7-bb87-493d-a71a-45c574b560c0" name="Default" comment="add:web应用程序-从django入手，编写视图">
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/index.html" afterDir="false" />
+    <list default="true" id="732e9ba7-bb87-493d-a71a-45c574b560c0" name="Default" comment="add:web应用程序-从django入手，编写模板">
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/topic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/topics.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_log/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_log/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_application/learning_log/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_logs/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_logs/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +140,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/data_visualization" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -150,6 +152,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\learn\peixun\Python\learn\web_application\learning_log\learning_logs\templates\learning_logs" />
       <recent name="D:\learn\peixun\Python\learn\data_visualization" />
     </key>
   </component>
@@ -545,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630251198143</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="add:web应用程序-从django入手，编写模板">
+      <created>1630252208577</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1630252208577</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -592,7 +602,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add:重构碰撞函数" />
     <MESSAGE value="add:判定游戏结束" />
     <MESSAGE value="add:开始按钮" />
     <MESSAGE value="add:重置游戏速度" />
@@ -617,7 +626,8 @@
     <MESSAGE value="add:web应用程序-从django入手，注册entry模型" />
     <MESSAGE value="add:web应用程序-从django入手，映射url" />
     <MESSAGE value="add:web应用程序-从django入手，编写视图" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:web应用程序-从django入手，编写视图" />
+    <MESSAGE value="add:web应用程序-从django入手，编写模板" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:web应用程序-从django入手，编写模板" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/learn$eq_world_map.coverage" NAME="eq_world_map Coverage Results" MODIFIED="1630222243345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
