@@ -1,5 +1,7 @@
+----------不再使用，迁移到gitee上了----------
 # 这是一个readme
 # 初来乍到，请多关照
+
 
 ---------- win10的pycharm中terminal是指为oh my zsh ----------
 # 使用ubuntu终端（在win store中下载）安装zsh，如果失败请直接安装oh my zsh
