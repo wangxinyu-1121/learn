@@ -9,6 +9,9 @@
     {% block content %}
     <p>主题（Topics）：{{ topic }}</p>
     <p>条目（Entries）：</p>
+    <p>
+        <a href="{% url 'learning_logs:new_entry' topic.id %}">新增条目</a>
+    </p>
     <ul>
         {% for entry in entries %}
             <li>
