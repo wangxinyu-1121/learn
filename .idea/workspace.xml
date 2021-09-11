@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="732e9ba7-bb87-493d-a71a-45c574b560c0" name="Default" comment="add:web应用程序-从django入手，编写模板">
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/topic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/topics.html" afterDir="false" />
+    <list default="true" id="732e9ba7-bb87-493d-a71a-45c574b560c0" name="Default" comment="add:web应用程序-从django入手，创建页面">
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/new_topic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_application/learning_log/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/topics.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/topics.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_logs/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_logs/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/views.py" afterDir="false" />
     </list>
@@ -90,7 +89,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -555,7 +554,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630252208577</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="add:web应用程序-从django入手，创建页面">
+      <created>1630752298454</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1630752298454</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -602,7 +608,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add:判定游戏结束" />
     <MESSAGE value="add:开始按钮" />
     <MESSAGE value="add:重置游戏速度" />
     <MESSAGE value="add:计分板" />
@@ -627,7 +632,8 @@
     <MESSAGE value="add:web应用程序-从django入手，映射url" />
     <MESSAGE value="add:web应用程序-从django入手，编写视图" />
     <MESSAGE value="add:web应用程序-从django入手，编写模板" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:web应用程序-从django入手，编写模板" />
+    <MESSAGE value="add:web应用程序-从django入手，创建页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:web应用程序-从django入手，创建页面" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/learn$eq_world_map.coverage" NAME="eq_world_map Coverage Results" MODIFIED="1630222243345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />

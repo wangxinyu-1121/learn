@@ -17,6 +17,9 @@
             <li>还没有主题被添加</li>
         {% endfor %}
     </ul>
+
+    <a href="{% url 'learning_logs:new_topic' %}">新增一个主题</a>
+
     {% endblock content %}
 </body>
 </html>
