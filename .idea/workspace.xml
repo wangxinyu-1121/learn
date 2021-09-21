@@ -1,266 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="732e9ba7-bb87-493d-a71a-45c574b560c0" name="Default" comment="add:web应用程序-从django入手，新增主题">
-      <change afterPath="$PROJECT_DIR$/ll_env/bin/Activate.ps1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/bin/activate" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/bin/activate.csh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/bin/activate.fish" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/bin/easy_install-3.8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/bin/pip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/bin/pip3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/bin/pip3.8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip-20.1.1.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip-20.1.1.dist-info/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip-20.1.1.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip-20.1.1.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip-20.1.1.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip-20.1.1.dist-info/entry_points.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip-20.1.1.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/__main__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/build_env.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/cache.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/cli/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/cli/autocompletion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/cli/base_command.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/cli/cmdoptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/cli/command_context.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/cli/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/cli/main_parser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/cli/parser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/cli/progress_bars.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/cli/req_command.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/cli/spinners.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/cli/status_codes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/commands/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/commands/cache.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/commands/check.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/commands/completion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/commands/configuration.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/commands/debug.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/commands/download.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/commands/freeze.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/commands/hash.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/commands/help.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/commands/install.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/commands/list.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/commands/search.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/commands/show.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/commands/uninstall.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/commands/wheel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/configuration.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/distributions/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/distributions/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/distributions/installed.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/distributions/sdist.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/distributions/wheel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/index/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/index/collector.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/index/package_finder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/locations.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/models/candidate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/models/direct_url.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/models/format_control.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/models/index.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/models/link.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/models/scheme.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/models/search_scope.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/models/selection_prefs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/models/target_python.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/models/wheel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/network/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/network/auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/network/cache.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/network/download.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/network/session.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/network/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/network/xmlrpc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/operations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/operations/build/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/operations/build/metadata.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/operations/build/metadata_legacy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/operations/build/wheel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/operations/build/wheel_legacy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/operations/check.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/operations/freeze.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/operations/install/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/operations/install/editable_legacy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/operations/install/legacy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/operations/install/wheel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/operations/prepare.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/pyproject.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/req/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/req/constructors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/req/req_file.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/req/req_install.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/req/req_set.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/req/req_tracker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/req/req_uninstall.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/resolution/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/resolution/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/resolution/legacy/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/resolution/legacy/resolver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/resolution/resolvelib/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/resolution/resolvelib/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/resolution/resolvelib/candidates.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/resolution/resolvelib/factory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/resolution/resolvelib/provider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/resolution/resolvelib/requirements.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/resolution/resolvelib/resolver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/self_outdated_check.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/utils/appdirs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/utils/compat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/utils/compatibility_tags.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/utils/deprecation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/utils/direct_url_helpers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/utils/distutils_args.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/utils/encoding.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/utils/entrypoints.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/utils/filesystem.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/utils/filetypes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/utils/glibc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/utils/hashes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/utils/inject_securetransport.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/utils/logging.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/utils/misc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/utils/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/utils/packaging.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/utils/pkg_resources.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/utils/setuptools_build.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/utils/subprocess.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/utils/temp_dir.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/utils/typing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/utils/unpacking.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/utils/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/utils/virtualenv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/utils/wheel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/vcs/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/vcs/bazaar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/vcs/git.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/vcs/mercurial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/vcs/subversion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/vcs/versioncontrol.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_internal/wheel_builder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pip/_vendor/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pkg_resources-0.0.0.dist-info/AUTHORS.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pkg_resources-0.0.0.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pkg_resources-0.0.0.dist-info/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pkg_resources-0.0.0.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pkg_resources-0.0.0.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pkg_resources-0.0.0.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pkg_resources/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pkg_resources/_vendor/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pkg_resources/_vendor/appdirs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/__about__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/_compat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/_structures.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/markers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/requirements.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/specifiers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/version.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pkg_resources/_vendor/pyparsing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pkg_resources/_vendor/six.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pkg_resources/extern/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/pkg_resources/py31compat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/setuptools-44.0.0.dist-info/entry_points.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/setuptools-44.0.0.dist-info/zip-safe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/setuptools/_vendor/packaging/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/setuptools/_vendor/packaging/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/setuptools/_vendor/packaging/version.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/setuptools/command/alias.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/setuptools/command/easy_install.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/setuptools/command/egg_info.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/setuptools/command/install.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/setuptools/command/install_egg_info.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/setuptools/command/install_lib.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/setuptools/command/py36compat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/setuptools/command/rotate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/setuptools/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/setuptools/dist.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/setuptools/gui-32.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/setuptools/gui-64.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/setuptools/gui.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/setuptools/py34compat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/lib/python3.8/site-packages/setuptools/script.tmpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/share/python-wheels/pip-20.1.1-py2.py3-none-any.whl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/share/python-wheels/pkg_resources-0.0.0-py2.py3-none-any.whl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/share/python-wheels/pyparsing-2.4.7-py2.py3-none-any.whl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ll_env/share/python-wheels/setuptools-44.0.0-py2.py3-none-any.whl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/new_entry.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/bin/easy_install-3.8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/easy_install.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pip/_internal/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pip/_internal/cli/base_command.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pip/_internal/commands/cache.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pip/_internal/commands/uninstall.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pip/_internal/distributions/sdist.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pip/_internal/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pip/_internal/network/auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pip/_internal/network/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pip/_internal/operations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pip/_internal/operations/build/metadata.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pip/_internal/operations/build/wheel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pip/_internal/operations/build/wheel_legacy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pip/_internal/req/constructors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pip/_internal/req/req_file.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pip/_internal/req/req_set.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pip/_internal/resolution/legacy/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pip/_internal/self_outdated_check.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pip/_internal/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pip/_internal/utils/compat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pip/_internal/utils/direct_url_helpers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pip/_internal/utils/logging.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pip/_internal/utils/subprocess.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pip/_internal/utils/unpacking.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pip/_vendor/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pkg_resources-0.0.0.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pkg_resources/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/requirements.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/pkg_resources/_vendor/pyparsing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/setuptools-44.0.0.dist-info/AUTHORS.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/setuptools-44.0.0.dist-info/dependency_links.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/setuptools-44.0.0.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/setuptools/_vendor/packaging/_structures.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/setuptools/_vendor/packaging/requirements.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/setuptools/archive_util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/setuptools/build_meta.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/setuptools/cli-64.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/setuptools/command/alias.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/setuptools/command/build_py.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/setuptools/command/dist_info.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/setuptools/command/easy_install.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/setuptools/command/install_egg_info.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/setuptools/command/py36compat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/setuptools/command/saveopts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/setuptools/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/setuptools/extern/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/setuptools/msvc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/setuptools/namespaces.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/setuptools/script.tmpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/setuptools/site-patch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/setuptools/unicode_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/lib/python3.8/site-packages/setuptools/version.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/share/python-wheels/lockfile-0.12.2-py2.py3-none-any.whl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/share/python-wheels/pip-20.1.1-py2.py3-none-any.whl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/share/python-wheels/pkg_resources-0.0.0-py2.py3-none-any.whl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/share/python-wheels/progress-1.5-py2.py3-none-any.whl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/share/python-wheels/resolvelib-0.3.0-py2.py3-none-any.whl" afterDir="false" />
+    <list default="true" id="732e9ba7-bb87-493d-a71a-45c574b560c0" name="Default" comment="add:web应用程序-从django入手，部署学习笔记">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/=2.7," afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/Procfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/beautifulsoup4-4.10.0.dist-info/AUTHORS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/beautifulsoup4-4.10.0.dist-info/COPYING.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/beautifulsoup4-4.10.0.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/beautifulsoup4-4.10.0.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/beautifulsoup4-4.10.0.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/beautifulsoup4-4.10.0.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/beautifulsoup4-4.10.0.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/beautifulsoup4-4.10.0.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/bootstrap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/components.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/renderers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/templates/bootstrap4/bootstrap4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/templates/bootstrap4/field_errors.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/templates/bootstrap4/field_help_text.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/templates/bootstrap4/form_errors.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/templates/bootstrap4/messages.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/templates/bootstrap4/pagination.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/templates/bootstrap4/widgets/radio_select_button_group.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/templatetags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/templatetags/bootstrap4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/text.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/widgets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bs4/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bs4/builder/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bs4/builder/_html5lib.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bs4/builder/_htmlparser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bs4/builder/_lxml.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bs4/dammit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bs4/diagnose.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bs4/element.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bs4/formatter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bs4/testing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/django_bootstrap4-3.0.1.dist-info/AUTHORS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/django_bootstrap4-3.0.1.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/django_bootstrap4-3.0.1.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/django_bootstrap4-3.0.1.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/django_bootstrap4-3.0.1.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/django_bootstrap4-3.0.1.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/django_bootstrap4-3.0.1.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2/_ipaddress.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2/_json.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2/_psycopg.cpython-38-x86_64-linux-gnu.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2/_range.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2/errorcodes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2/errors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2/extensions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2/extras.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2/pool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2/sql.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2/tz.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary-2.9.1.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary-2.9.1.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary-2.9.1.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary-2.9.1.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary-2.9.1.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary-2.9.1.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libcom_err-2abe824b.so.2.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libcrypto-192e2b20.so.1.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libgssapi_krb5-497db0c6.so.2.2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libk5crypto-b1f99d5c.so.3.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libkeyutils-dfe70bd6.so.1.5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libkrb5-fc820a1d.so.3.3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libkrb5support-04204f6a.so.0.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/liblber-2-60a3dfe7.4.so.2.11.7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libldap_r-2-63e23f7f.4.so.2.11.7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libpcre-9513aab5.so.1.2.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libpq-6f24e430.so.5.13" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libsasl2-0728f38d.so.3.0.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libselinux-0922c95c.so.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libssl-3709da14.so.1.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libz-745e0a09.so.1.2.7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/soupsieve-2.2.1.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/soupsieve-2.2.1.dist-info/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/soupsieve-2.2.1.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/soupsieve-2.2.1.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/soupsieve-2.2.1.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/soupsieve-2.2.1.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/soupsieve/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/soupsieve/__meta__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/soupsieve/css_match.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/soupsieve/css_parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/soupsieve/css_types.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/soupsieve/util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_application/learning_log/runtime.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_application/learning_log/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_logs/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_log/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_log/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/topic.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/topic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_logs/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_logs/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/topics.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/topics.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_logs/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_application/learning_log/ll_env/bin/python" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/bin/python" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_application/learning_log/ll_env/bin/python3" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/bin/python3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/bin/python" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/bin/python" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/bin/python3" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/bin/python3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_application/learning_log/users/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/users/templates/registration/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -393,9 +241,10 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web_application/learning_log/users/templates/registration" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -406,33 +255,19 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\learn\peixun\Python\learn\web_application\learning_log\users\templates\registration" />
       <recent name="D:\learn\peixun\Python\learn\web_application\learning_log\learning_logs\templates\learning_logs" />
       <recent name="D:\learn\peixun\Python\learn\data_visualization" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\learn\peixun\Python\learn\web_application\learning_log\ll_env" />
+      <recent name="D:\learn\peixun\Python\learn\web_application\learning_log\users\templates" />
+      <recent name="D:\learn\peixun\Python\learn\web_application\learning_log\users" />
+      <recent name="D:\learn\peixun\Python\learn\web_application\learning_log\users\migrations" />
+      <recent name="D:\learn\peixun\Python\learn\web_application\learning_log" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.python_repos_visual">
-    <configuration name="death_valley_highs_lows" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="learn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_visualization" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_visualization/death_valley_highs_lows.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.tests">
     <configuration name="eq_explore_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="learn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -521,13 +356,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="learn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web_application/learning_log/learning_logs" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web_application/learning_log/learning_logs/tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.tests" />
         <item itemvalue="Python.python_repos_visual" />
         <item itemvalue="Python.python_repos" />
         <item itemvalue="Python.eq_explore_data" />
         <item itemvalue="Python.eq_world_map" />
-        <item itemvalue="Python.death_valley_highs_lows" />
       </list>
     </recent_temporary>
   </component>
@@ -558,7 +415,10 @@
       <workItem from="1630146793602" duration="20800000" />
       <workItem from="1631336687615" duration="68000" />
       <workItem from="1631339514529" duration="369000" />
-      <workItem from="1631339888256" duration="2669000" />
+      <workItem from="1631339888256" duration="23059000" />
+      <workItem from="1631798465547" duration="1765000" />
+      <workItem from="1632019929563" duration="2130000" />
+      <workItem from="1632022097043" duration="14964000" />
     </task>
     <task id="LOCAL-00001" summary="新增《外星人入侵》游戏pygame框架">
       <created>1628788055741</created>
@@ -826,7 +686,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631333041045</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="add:web应用程序-从django入手，创建用户账户">
+      <created>1631421822349</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1631421822349</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -876,9 +743,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/from_github" />
     </ignored-roots>
-    <MESSAGE value="add:重置游戏速度" />
-    <MESSAGE value="add:计分板" />
-    <MESSAGE value="add:记录最高分" />
     <MESSAGE value="add:记命" />
     <MESSAGE value="fixed；格式化" />
     <MESSAGE value="add:数据可视化" />
@@ -901,7 +765,10 @@
     <MESSAGE value="add:web应用程序-从django入手，编写模板" />
     <MESSAGE value="add:web应用程序-从django入手，创建页面" />
     <MESSAGE value="add:web应用程序-从django入手，新增主题" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:web应用程序-从django入手，新增主题" />
+    <MESSAGE value="add:web应用程序-从django入手，新增条目" />
+    <MESSAGE value="add:web应用程序-从django入手，创建用户账户" />
+    <MESSAGE value="add:web应用程序-从django入手，部署学习笔记" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:web应用程序-从django入手，部署学习笔记" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/learn$eq_world_map.coverage" NAME="eq_world_map Coverage Results" MODIFIED="1630222243345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
@@ -909,6 +776,7 @@
     <SUITE FILE_PATH="coverage/learn$rw_visual.coverage" NAME="rw_visual Coverage Results" MODIFIED="1630147167731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
     <SUITE FILE_PATH="coverage/learn$mpl_aquares__1_.coverage" NAME="mpl_aquares (1) Coverage Results" MODIFIED="1630072786168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
     <SUITE FILE_PATH="coverage/learn$python_repos.coverage" NAME="python_repos Coverage Results" MODIFIED="1630228009726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
+    <SUITE FILE_PATH="coverage/learn$tests.coverage" NAME="tests Coverage Results" MODIFIED="1632020501173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web_application/learning_log/learning_logs" />
     <SUITE FILE_PATH="coverage/learn$die_visual.coverage" NAME="die_visual Coverage Results" MODIFIED="1630148752133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
     <SUITE FILE_PATH="coverage/learn$sitka_highs.coverage" NAME="sitka_highs_lows Coverage Results" MODIFIED="1630220462875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
     <SUITE FILE_PATH="coverage/learn$mpl_aquares.coverage" NAME="mpl_aquares Coverage Results" MODIFIED="1629647782273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/数据可视化" />
