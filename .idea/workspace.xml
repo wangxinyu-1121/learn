@@ -2,113 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="732e9ba7-bb87-493d-a71a-45c574b560c0" name="Default" comment="add:web应用程序-从django入手，部署学习笔记">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/=2.7," afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/Procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/beautifulsoup4-4.10.0.dist-info/AUTHORS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/beautifulsoup4-4.10.0.dist-info/COPYING.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/beautifulsoup4-4.10.0.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/beautifulsoup4-4.10.0.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/beautifulsoup4-4.10.0.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/beautifulsoup4-4.10.0.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/beautifulsoup4-4.10.0.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/beautifulsoup4-4.10.0.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/bootstrap.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/components.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/renderers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/templates/bootstrap4/bootstrap4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/templates/bootstrap4/field_errors.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/templates/bootstrap4/field_help_text.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/templates/bootstrap4/form_errors.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/templates/bootstrap4/messages.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/templates/bootstrap4/pagination.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/templates/bootstrap4/widgets/radio_select_button_group.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/templatetags/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/templatetags/bootstrap4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/text.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bootstrap4/widgets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bs4/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bs4/builder/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bs4/builder/_html5lib.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bs4/builder/_htmlparser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bs4/builder/_lxml.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bs4/dammit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bs4/diagnose.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bs4/element.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bs4/formatter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/bs4/testing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/django_bootstrap4-3.0.1.dist-info/AUTHORS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/django_bootstrap4-3.0.1.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/django_bootstrap4-3.0.1.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/django_bootstrap4-3.0.1.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/django_bootstrap4-3.0.1.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/django_bootstrap4-3.0.1.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/django_bootstrap4-3.0.1.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2/_ipaddress.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2/_json.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2/_psycopg.cpython-38-x86_64-linux-gnu.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2/_range.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2/errorcodes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2/errors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2/extensions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2/extras.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2/pool.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2/sql.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2/tz.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary-2.9.1.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary-2.9.1.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary-2.9.1.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary-2.9.1.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary-2.9.1.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary-2.9.1.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libcom_err-2abe824b.so.2.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libcrypto-192e2b20.so.1.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libgssapi_krb5-497db0c6.so.2.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libk5crypto-b1f99d5c.so.3.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libkeyutils-dfe70bd6.so.1.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libkrb5-fc820a1d.so.3.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libkrb5support-04204f6a.so.0.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/liblber-2-60a3dfe7.4.so.2.11.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libldap_r-2-63e23f7f.4.so.2.11.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libpcre-9513aab5.so.1.2.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libpq-6f24e430.so.5.13" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libsasl2-0728f38d.so.3.0.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libselinux-0922c95c.so.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libssl-3709da14.so.1.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/psycopg2_binary.libs/libz-745e0a09.so.1.2.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/soupsieve-2.2.1.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/soupsieve-2.2.1.dist-info/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/soupsieve-2.2.1.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/soupsieve-2.2.1.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/soupsieve-2.2.1.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/soupsieve-2.2.1.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/soupsieve/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/soupsieve/__meta__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/soupsieve/css_match.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/soupsieve/css_parser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/soupsieve/css_types.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/lib/python3.8/site-packages/soupsieve/util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_application/learning_log/runtime.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/thriftCompiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/automate_with_python/auto_reply_message/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/automate_with_python/auto_reply_message/mclip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_application/learning_log/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_log/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_log/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/topic.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/topic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/topics.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/templates/learning_logs/topics.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_application/learning_log/learning_logs/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/learning_logs/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_application/learning_log/ll_env/bin/python" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/bin/python" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_application/learning_log/ll_env/bin/python3" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/bin/python3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/bin/python" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/bin/python" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/bin/python3" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/ll_env/ll_env/bin/python3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_application/learning_log/users/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_application/learning_log/users/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/automate_with_python/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/automate_with_python/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -136,7 +38,7 @@
         <option name="title" value="All" />
       </GitPushTagMode>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/automate_with_python" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/alien_invasion_game/settings.py" root0="FORCE_HIGHLIGHTING" />
@@ -243,7 +145,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web_application/learning_log/users/templates/registration" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -267,7 +169,7 @@
       <recent name="D:\learn\peixun\Python\learn\web_application\learning_log" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.tests">
+  <component name="RunManager" selected="Python.mclip">
     <configuration name="eq_explore_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="learn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -290,7 +192,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="eq_world_map" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="mclip" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="learn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -298,12 +200,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_visualization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/automate_with_python/auto_reply_message" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_visualization/eq_world_map.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/automate_with_python/auto_reply_message/mclip.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -380,11 +282,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mclip" />
         <item itemvalue="Python.tests" />
         <item itemvalue="Python.python_repos_visual" />
         <item itemvalue="Python.python_repos" />
         <item itemvalue="Python.eq_explore_data" />
-        <item itemvalue="Python.eq_world_map" />
       </list>
     </recent_temporary>
   </component>
@@ -418,7 +320,12 @@
       <workItem from="1631339888256" duration="23059000" />
       <workItem from="1631798465547" duration="1765000" />
       <workItem from="1632019929563" duration="2130000" />
-      <workItem from="1632022097043" duration="14964000" />
+      <workItem from="1632022097043" duration="16261000" />
+      <workItem from="1634827278753" duration="18000" />
+      <workItem from="1634829293640" duration="63000" />
+      <workItem from="1639062917152" duration="160000" />
+      <workItem from="1639063171276" duration="765000" />
+      <workItem from="1639063961318" duration="3024000" />
     </task>
     <task id="LOCAL-00001" summary="新增《外星人入侵》游戏pygame框架">
       <created>1628788055741</created>
@@ -693,7 +600,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631421822349</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="add:web应用程序-从django入手，部署学习笔记">
+      <created>1632227773399</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1632227773399</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -774,12 +688,13 @@
     <SUITE FILE_PATH="coverage/learn$eq_world_map.coverage" NAME="eq_world_map Coverage Results" MODIFIED="1630222243345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
     <SUITE FILE_PATH="coverage/learn$eq_explore_data.coverage" NAME="eq_explore_data Coverage Results" MODIFIED="1630225999795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
     <SUITE FILE_PATH="coverage/learn$rw_visual.coverage" NAME="rw_visual Coverage Results" MODIFIED="1630147167731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
-    <SUITE FILE_PATH="coverage/learn$mpl_aquares__1_.coverage" NAME="mpl_aquares (1) Coverage Results" MODIFIED="1630072786168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
-    <SUITE FILE_PATH="coverage/learn$python_repos.coverage" NAME="python_repos Coverage Results" MODIFIED="1630228009726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
     <SUITE FILE_PATH="coverage/learn$tests.coverage" NAME="tests Coverage Results" MODIFIED="1632020501173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web_application/learning_log/learning_logs" />
-    <SUITE FILE_PATH="coverage/learn$die_visual.coverage" NAME="die_visual Coverage Results" MODIFIED="1630148752133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
     <SUITE FILE_PATH="coverage/learn$sitka_highs.coverage" NAME="sitka_highs_lows Coverage Results" MODIFIED="1630220462875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
     <SUITE FILE_PATH="coverage/learn$mpl_aquares.coverage" NAME="mpl_aquares Coverage Results" MODIFIED="1629647782273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/数据可视化" />
+    <SUITE FILE_PATH="coverage/learn$mpl_aquares__1_.coverage" NAME="mpl_aquares (1) Coverage Results" MODIFIED="1630072786168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
+    <SUITE FILE_PATH="coverage/learn$python_repos.coverage" NAME="python_repos Coverage Results" MODIFIED="1630228009726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
+    <SUITE FILE_PATH="coverage/learn$mclip.coverage" NAME="mclip Coverage Results" MODIFIED="1639066847720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/automate_with_python/auto_reply_message" />
+    <SUITE FILE_PATH="coverage/learn$die_visual.coverage" NAME="die_visual Coverage Results" MODIFIED="1630148752133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
     <SUITE FILE_PATH="coverage/learn$death_valley_highs_lows.coverage" NAME="death_valley_highs_lows Coverage Results" MODIFIED="1630220744964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
     <SUITE FILE_PATH="coverage/learn$alien_invasion.coverage" NAME="alien_invasion Coverage Results" MODIFIED="1629615512370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alien_invasion_game" />
     <SUITE FILE_PATH="coverage/learn$python_repos_visual.coverage" NAME="python_repos_visual Coverage Results" MODIFIED="1630229120746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
