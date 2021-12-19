@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="732e9ba7-bb87-493d-a71a-45c574b560c0" name="Default" comment="add:web应用程序-从django入手，部署学习笔记">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/thriftCompiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/automate_with_python/auto_reply_message/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/automate_with_python/auto_reply_message/mclip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="732e9ba7-bb87-493d-a71a-45c574b560c0" name="Default" comment="项目一：使用多剪切板自动回复消息">
+      <change afterPath="$PROJECT_DIR$/automate_with_python/add_unordered_list/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/automate_with_python/add_unordered_list/bullet_point_adder.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/automate_with_python" beforeDir="false" afterPath="$PROJECT_DIR$/automate_with_python" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/automate_with_python/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/automate_with_python/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -325,7 +321,9 @@
       <workItem from="1634829293640" duration="63000" />
       <workItem from="1639062917152" duration="160000" />
       <workItem from="1639063171276" duration="765000" />
-      <workItem from="1639063961318" duration="3024000" />
+      <workItem from="1639063961318" duration="3733000" />
+      <workItem from="1639492054647" duration="36000" />
+      <workItem from="1639492102638" duration="731000" />
     </task>
     <task id="LOCAL-00001" summary="新增《外星人入侵》游戏pygame框架">
       <created>1628788055741</created>
@@ -607,7 +605,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632227773399</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="项目一：使用多剪切板自动回复消息">
+      <created>1639067087131</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1639067087131</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -657,7 +662,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/from_github" />
     </ignored-roots>
-    <MESSAGE value="add:记命" />
     <MESSAGE value="fixed；格式化" />
     <MESSAGE value="add:数据可视化" />
     <MESSAGE value="add:随机漫步" />
@@ -682,7 +686,8 @@
     <MESSAGE value="add:web应用程序-从django入手，新增条目" />
     <MESSAGE value="add:web应用程序-从django入手，创建用户账户" />
     <MESSAGE value="add:web应用程序-从django入手，部署学习笔记" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:web应用程序-从django入手，部署学习笔记" />
+    <MESSAGE value="项目一：使用多剪切板自动回复消息" />
+    <option name="LAST_COMMIT_MESSAGE" value="项目一：使用多剪切板自动回复消息" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/learn$eq_world_map.coverage" NAME="eq_world_map Coverage Results" MODIFIED="1630222243345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
