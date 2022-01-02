@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="732e9ba7-bb87-493d-a71a-45c574b560c0" name="Default" comment="项目一：使用多剪切板自动回复消息">
-      <change afterPath="$PROJECT_DIR$/automate_with_python/get_info_from_web/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/automate_with_python/get_info_from_web/mapIt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/automate_with_python/about_time/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/automate_with_python/about_time/stopwatch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/learn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/learn.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +39,14 @@
       </GitPushTagMode>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/automate_with_python" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/alien_invasion_game/settings.py" root0="FORCE_HIGHLIGHTING" />
@@ -142,6 +153,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -165,7 +177,7 @@
       <recent name="D:\learn\peixun\Python\learn\web_application\learning_log" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.mapIt (1)">
+  <component name="RunManager" selected="Python.stopwatch">
     <configuration name="mapIt (1)" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -210,7 +222,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="python_repos_visual" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="stopwatch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="learn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -218,12 +230,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_visualization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/automate_with_python/about_time" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_visualization/python_repos_visual.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/automate_with_python/about_time/stopwatch.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -246,6 +258,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/alien_invasion_game/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="learn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -278,10 +312,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.stopwatch" />
+        <item itemvalue="Python.test1" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.mapIt" />
         <item itemvalue="Python.tests" />
-        <item itemvalue="Python.python_repos_visual" />
       </list>
     </recent_temporary>
   </component>
@@ -325,7 +360,9 @@
       <workItem from="1639492102638" duration="731000" />
       <workItem from="1639885013883" duration="641000" />
       <workItem from="1639885676250" duration="2475000" />
-      <workItem from="1640511082064" duration="5809000" />
+      <workItem from="1640511082064" duration="6451000" />
+      <workItem from="1640702601758" duration="2531000" />
+      <workItem from="1641108611382" duration="8280000" />
     </task>
     <task id="LOCAL-00001" summary="新增《外星人入侵》游戏pygame框架">
       <created>1628788055741</created>
@@ -621,7 +658,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639885044873</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="项目一：使用多剪切板自动回复消息">
+      <created>1640530256874</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1640530256874</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -704,6 +748,7 @@
     <SUITE FILE_PATH="coverage/learn$rw_visual.coverage" NAME="rw_visual Coverage Results" MODIFIED="1630147167731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
     <SUITE FILE_PATH="coverage/learn$tests.coverage" NAME="tests Coverage Results" MODIFIED="1632020501173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web_application/learning_log/learning_logs" />
     <SUITE FILE_PATH="coverage/learn$sitka_highs.coverage" NAME="sitka_highs_lows Coverage Results" MODIFIED="1630220462875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
+    <SUITE FILE_PATH="coverage/learn$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1641114031401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/learn$mpl_aquares.coverage" NAME="mpl_aquares Coverage Results" MODIFIED="1629647782273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/数据可视化" />
     <SUITE FILE_PATH="coverage/learn$mapIt__1_.coverage" NAME="mapIt (1) Coverage Results" MODIFIED="1640530237949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/automate_with_python/get_info_from_web" />
     <SUITE FILE_PATH="coverage/learn$mpl_aquares__1_.coverage" NAME="mpl_aquares (1) Coverage Results" MODIFIED="1630072786168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
@@ -712,6 +757,7 @@
     <SUITE FILE_PATH="coverage/learn$die_visual.coverage" NAME="die_visual Coverage Results" MODIFIED="1630148752133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
     <SUITE FILE_PATH="coverage/learn$test.coverage" NAME="test Coverage Results" MODIFIED="1640529534723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alien_invasion_game" />
     <SUITE FILE_PATH="coverage/learn$mapIt.coverage" NAME="mapIt Coverage Results" MODIFIED="1639887091476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/automate_with_python/get_info_from_weeb" />
+    <SUITE FILE_PATH="coverage/learn$stopwatch.coverage" NAME="stopwatch Coverage Results" MODIFIED="1641117457712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/automate_with_python/about_time" />
     <SUITE FILE_PATH="coverage/learn$death_valley_highs_lows.coverage" NAME="death_valley_highs_lows Coverage Results" MODIFIED="1630220744964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
     <SUITE FILE_PATH="coverage/learn$alien_invasion.coverage" NAME="alien_invasion Coverage Results" MODIFIED="1629615512370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alien_invasion_game" />
     <SUITE FILE_PATH="coverage/learn$python_repos_visual.coverage" NAME="python_repos_visual Coverage Results" MODIFIED="1630229120746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
