@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="732e9ba7-bb87-493d-a71a-45c574b560c0" name="Default" comment="项目一：使用多剪切板自动回复消息">
-      <change afterPath="$PROJECT_DIR$/automate_with_python/about_time/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/automate_with_python/about_time/stopwatch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/learn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/learn.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="732e9ba7-bb87-493d-a71a-45c574b560c0" name="Default" comment="add:秒表">
+      <change beforePath="$PROJECT_DIR$/automate_with_python" beforeDir="false" afterPath="$PROJECT_DIR$/automate_with_python" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/automate_with_python/about_time/stopwatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/automate_with_python/about_time/stopwatch.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -362,7 +358,7 @@
       <workItem from="1639885676250" duration="2475000" />
       <workItem from="1640511082064" duration="6451000" />
       <workItem from="1640702601758" duration="2531000" />
-      <workItem from="1641108611382" duration="8280000" />
+      <workItem from="1641108611382" duration="9423000" />
     </task>
     <task id="LOCAL-00001" summary="新增《外星人入侵》游戏pygame框架">
       <created>1628788055741</created>
@@ -665,7 +661,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640530256874</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="add:秒表">
+      <created>1641117565687</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1641117565687</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -715,7 +718,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/from_github" />
     </ignored-roots>
-    <MESSAGE value="fixed；格式化" />
     <MESSAGE value="add:数据可视化" />
     <MESSAGE value="add:随机漫步" />
     <MESSAGE value="add:创建骰子并投掷骰子" />
@@ -740,7 +742,8 @@
     <MESSAGE value="add:web应用程序-从django入手，创建用户账户" />
     <MESSAGE value="add:web应用程序-从django入手，部署学习笔记" />
     <MESSAGE value="项目一：使用多剪切板自动回复消息" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目一：使用多剪切板自动回复消息" />
+    <MESSAGE value="add:秒表" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:秒表" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/learn$eq_world_map.coverage" NAME="eq_world_map Coverage Results" MODIFIED="1630222243345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
@@ -757,7 +760,7 @@
     <SUITE FILE_PATH="coverage/learn$die_visual.coverage" NAME="die_visual Coverage Results" MODIFIED="1630148752133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
     <SUITE FILE_PATH="coverage/learn$test.coverage" NAME="test Coverage Results" MODIFIED="1640529534723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alien_invasion_game" />
     <SUITE FILE_PATH="coverage/learn$mapIt.coverage" NAME="mapIt Coverage Results" MODIFIED="1639887091476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/automate_with_python/get_info_from_weeb" />
-    <SUITE FILE_PATH="coverage/learn$stopwatch.coverage" NAME="stopwatch Coverage Results" MODIFIED="1641117457712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/automate_with_python/about_time" />
+    <SUITE FILE_PATH="coverage/learn$stopwatch.coverage" NAME="stopwatch Coverage Results" MODIFIED="1641118664333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/automate_with_python/about_time" />
     <SUITE FILE_PATH="coverage/learn$death_valley_highs_lows.coverage" NAME="death_valley_highs_lows Coverage Results" MODIFIED="1630220744964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
     <SUITE FILE_PATH="coverage/learn$alien_invasion.coverage" NAME="alien_invasion Coverage Results" MODIFIED="1629615512370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alien_invasion_game" />
     <SUITE FILE_PATH="coverage/learn$python_repos_visual.coverage" NAME="python_repos_visual Coverage Results" MODIFIED="1630229120746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualization" />
